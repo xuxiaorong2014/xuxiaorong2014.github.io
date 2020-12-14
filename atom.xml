@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>学无止境</title>
+  
+  <subtitle>任何一个人都有值得自己学习的地方</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://xuxiaorong2014.github.io/"/>
+  <updated>2020-12-14T03:36:34.915Z</updated>
+  <id>http://xuxiaorong2014.github.io/</id>
+  
+  <author>
+    <name>许肖荣</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的直播源</title>
+    <link href="http://xuxiaorong2014.github.io/uncategorized/m3u8.html"/>
+    <id>http://xuxiaorong2014.github.io/uncategorized/m3u8.html</id>
+    <published>2020-12-07T15:20:20.000Z</published>
+    <updated>2020-12-14T03:36:34.915Z</updated>
+    
+    <content type="html"><![CDATA[<p>电视：</p><ul><li><a href="http://112.17.40.140/PLTV/88888888/224/3221226491/index.m3u8" target="_blank" rel="noopener">凤凰卫视资讯台</a></li><li><a href="http://112.17.40.140/PLTV/88888888/224/3221226368/index.m3u8" target="_blank" rel="noopener">凤凰卫视中文台</a></li><li><a href="http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8" target="_blank" rel="noopener">香港卫视</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv1_2/index.m3u8" target="_blank" rel="noopener">CCTV 1</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv2_2/index.m3u8" target="_blank" rel="noopener">CCTV 2</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv3_2/index.m3u8" target="_blank" rel="noopener">CCTV 3</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv4_2/index.m3u8" target="_blank" rel="noopener">CCTV 4</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv5_2/index.m3u8" target="_blank" rel="noopener">CCTV 5</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv6_2/index.m3u8" target="_blank" rel="noopener">CCTV 6</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv7_2/index.m3u8" target="_blank" rel="noopener">CCTV 7</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv8_2/index.m3u8" target="_blank" rel="noopener">CCTV 8</a></li><li><a href="http://221.179.217.9/PLTV/88888888/224/3221226465/1.m3u8" target="_blank" rel="noopener">CCTV 9</a></li><li><a href="http://221.179.217.9/PLTV/88888888/224/3221226464/1.m3u8" target="_blank" rel="noopener">CCTV 10</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv11_2/index.m3u8" target="_blank" rel="noopener">CCTV 11</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv12_2/index.m3u8" target="_blank" rel="noopener">CCTV 12</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv13_2/index.m3u8" target="_blank" rel="noopener">CCTV 13</a></li><li><a href="http://221.179.217.9/PLTV/88888888/224/3221226461/1.m3u8" target="_blank" rel="noopener">CCTV 14</a></li><li><a href="http://cctvalih5ca.v.myalicdn.com/live/cctv15_2/index.m3u8" target="_blank" rel="noopener">CCTV 15</a></li></ul><p>电台：</p><ul><li><a href="http://ngcdn001.cnr.cn/live/zgzs/index.m3u8" target="_blank" rel="noopener">中国之声</a></li><li><a href="http://ngcdn002.cnr.cn/live/jjzs/index.m3u8" target="_blank" rel="noopener">经济之声</a></li><li><a href="http://ngcdn014.cnr.cn/live/ylgb/index.m3u8" target="_blank" rel="noopener">阅读之声 AM747</a></li><li><a href="http://satellitepull.cnr.cn/live/wxgjlxyy/playlist.m3u8" target="_blank" rel="noopener">Hit FM</a></li><li><a href="http://ngcdn003.cnr.cn/live/yyzs/index.m3u8" target="_blank" rel="noopener">音乐之声</a></li><li><a href="http://cnlive.cnr.cn/hls/zgjtgbsh.m3u8" target="_blank" rel="noopener">中国交通广播</a></li><li><a href="http://cnlive.cnr.cn/hls/hhecno.m3u8" target="_blank" rel="noopener">河南经济广播 FM103.2</a></li><li><a href="http://satellitepull.cnr.cn/live/wx32dfgbdt/playlist.m3u8" target="_blank" rel="noopener">上海东方广播电台</a></li><li><a href="https://lhttp.qingting.fm/live/274/64k.mp3" target="_blank" rel="noopener">上海动感101 FM101.7</a></li><li><a href="https://lhttp.qingting.fm/live/273/64k.mp3" target="_blank" rel="noopener">LoveRadio魅力103 FM103.7</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;电视：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://112.17.40.140/PLTV/88888888/224/3221226491/index.m3u8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;凤凰卫视资讯台&lt;/a&gt;&lt;/li&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="未分类" scheme="http://xuxiaorong2014.github.io/categories/uncategorized/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>内网穿透工具--FRP</title>
+    <link href="http://xuxiaorong2014.github.io/system/frp.html"/>
+    <id>http://xuxiaorong2014.github.io/system/frp.html</id>
+    <published>2019-10-15T15:20:20.000Z</published>
+    <updated>2019-10-15T06:27:27.700Z</updated>
+    
+    <content type="html"><![CDATA[<p>FRP 项目地址：<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">https://github.com/fatedier/frp</a></p><p>FRP 下载地址：<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">https://github.com/fatedier/frp/releases</a></p><h2 id="linux-服务端安装"><a href="#linux-服务端安装" class="headerlink" title="linux 服务端安装:"></a>linux 服务端安装:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gz</span><br><span class="line">tar xzvf frp_0.29.0_linux_386.tar.gz</span><br><span class="line">mv frp_0.29.0_linux_386 frp</span><br></pre></td></tr></table></figure><h2 id="linux-服务端配置"><a href="#linux-服务端配置" class="headerlink" title="linux 服务端配置:"></a>linux 服务端配置:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ cat frps.ini</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line">#默认配置中监听的是 7000 端口，可根据自己实际情况修改。</span><br><span class="line">bind_port = 7000  </span><br><span class="line">#web服务绑定端口  </span><br><span class="line">vhost_http_port = 8080  </span><br><span class="line"></span><br><span class="line">#启动 FRP 服务端</span><br><span class="line">$ ./frps -c ./frps.ini</span><br></pre></td></tr></table></figure><p>通过上面简单的两步就可以成功启动一个监听在 7000 端口的 FRP 服务端。</p><h2 id="添加开机启动等服务"><a href="#添加开机启动等服务" class="headerlink" title="添加开机启动等服务"></a>添加开机启动等服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先先新建一个 写有命令的可执行文件</span><br><span class="line">vi /usr/local/frp/start_frp</span><br><span class="line">nohup /usr/local/frp/frps -c /usr/local/frp/frps.ini &gt;/usr/local/frp/log.txt 2&gt;&amp;1 &amp;</span><br><span class="line">给此文件添加执行权限</span><br><span class="line">chmod +x /usr/local/frp/start_frp</span><br></pre></td></tr></table></figure><p>创建Frp执行脚本。<br>vi /etc/init.d/frp</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#</span><br><span class="line"># frp startup script for the server</span><br><span class="line">#</span><br><span class="line"># chkconfig: 2345 90 10</span><br><span class="line"># description: start the frp</span><br><span class="line">#</span><br><span class="line"># Source function library</span><br><span class="line">. /etc/rc.d/init.d/functions</span><br><span class="line"> </span><br><span class="line">#脚本名称</span><br><span class="line">prog=frp</span><br><span class="line"> </span><br><span class="line">#frp安装目录</span><br><span class="line">FRP_HOME=/usr/local/frp/</span><br><span class="line">export FRP_HOME</span><br><span class="line"> </span><br><span class="line">#frp运行命令</span><br><span class="line">FRP_RUN_SERVICE=/usr/local/frp/start_frp</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">case &quot;$1&quot; in</span><br><span class="line">    start)</span><br><span class="line">    echo &quot;Starting frp...&quot;</span><br><span class="line">    $FRP_RUN_SERVICE</span><br><span class="line">    ;;</span><br><span class="line"> </span><br><span class="line">*)</span><br><span class="line">    echo &quot;Usage: $prog &#123;start&#125;&quot;</span><br><span class="line">    ;;</span><br><span class="line">esac</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure><p>修改文件为可运行文件： chmod a+x /etc/init.d/frp<br>查看frp开机启动情况： chkconfig –list<br>添加到系统启动队列中： chkconfig –add frp<br>启动服务: service frp start</p><h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置:"></a>客户端配置:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">$ vim frpc.ini</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line"># server_addr 为 FRP 服务端的公网 IP</span><br><span class="line">server_addr = 4.3.2.1</span><br><span class="line"># server_port 为 FRP 服务端监听的端口</span><br><span class="line">server_port = 7000</span><br><span class="line"></span><br><span class="line">#ssh 配置</span><br><span class="line">[ssh]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 22</span><br><span class="line">remote_port = 6000</span><br><span class="line"></span><br><span class="line">#虚拟主机配置</span><br><span class="line">[web]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 80</span><br><span class="line">custom_domains = wannabe.fun</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">启动 FRP 客户端</span><br><span class="line">$ ./frpc -c ./frpc.ini</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;FRP 项目地址：&lt;a href=&quot;https://github.com/fatedier/frp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/fatedier/frp&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;FRP 下载地址：&lt;a 
+      
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 10 专业版激活</title>
+    <link href="http://xuxiaorong2014.github.io/system/windows-10-jihuo.html"/>
+    <id>http://xuxiaorong2014.github.io/system/windows-10-jihuo.html</id>
+    <published>2019-09-17T03:34:08.000Z</published>
+    <updated>2019-09-17T03:35:19.137Z</updated>
+    
+    <content type="html"><![CDATA[<p>第1步—断开网络连接 选择“开始”图标按钮，然后依次选择“设置”&gt;“更新和安全”&gt;“激活”。 选择“更改产品密钥”，然后输入 PW48G-MNG8W-B9978-YWBRP-76DGY 激活不了的，点关闭</p><p>第2步—联网 更改产品密钥 输入 CNXBM-4HMD8-MYCHH-22WJP-YKH3P 联网激活&gt;“激活成功”</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;第1步—断开网络连接 选择“开始”图标按钮，然后依次选择“设置”&amp;gt;“更新和安全”&amp;gt;“激活”。 选择“更改产品密钥”，然后输入 PW48G-MNG8W-B9978-YWBRP-76DGY 激活不了的，点关闭&lt;/p&gt;
+&lt;p&gt;第2步—联网 更改产品密钥 输入 CNXB
+      
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用 DriverStore Explorer 清理 DriverStore 驱动文件夹，释放系统盘</title>
+    <link href="http://xuxiaorong2014.github.io/system/driver-store-explorer.html"/>
+    <id>http://xuxiaorong2014.github.io/system/driver-store-explorer.html</id>
+    <published>2019-09-16T08:18:08.000Z</published>
+    <updated>2019-09-17T02:05:13.317Z</updated>
+    
+    <content type="html"><![CDATA[<p>DriverStore Explorer Github地址： </p><p><a href="https://github.com/lostindark/DriverStoreExplorer" target="_blank" rel="noopener">https://github.com/lostindark/DriverStoreExplorer</a></p><p><img src="https://github.com/lostindark/DriverStoreExplorer/raw/master/Screenshots/Screenshot.png" alt="Screenshot"></p><p>DriverStore Explorer [RAPR] makes it easier to deal with Windows driver store. Supported operations include enumeration, adding a driver package (stage), adding &amp; installing, deletion and force deletion from the driver store.</p><a id="more"></a><h2 id="Features"><a href="#Features" class="headerlink" title="Features:"></a>Features:</h2><ul><li>Enumerate / List all the packages staged in the current driver store.</li><li>Export the list as CSV.</li><li>Add a driver package to the driver store (called staging)</li><li>Install &amp; Add a driver package to the store.</li><li>Delete a package from the store. Force deletion supported.</li><li>Deletion of multiple driver packages (batch mode)</li><li>Full fledged GUI Supports grouping / sorting on any column.</li><li>Supports re-arranging of / Selecting specific columns.</li></ul><h2 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements:"></a>Requirements:</h2><p>.NET Framework 4.0</p><h2 id="Releases"><a href="#Releases" class="headerlink" title="Releases:"></a>Releases:</h2><p>Download the latest version here:<br><a href="https://github.com/lostindark/DriverStoreExplorer/releases/latest" target="_blank" rel="noopener">https://github.com/lostindark/DriverStoreExplorer/releases/latest</a>.</p><h2 id="Tested-Operating-Systems"><a href="#Tested-Operating-Systems" class="headerlink" title="Tested Operating Systems:"></a>Tested Operating Systems:</h2><p>Windows 10 64 bit</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;DriverStore Explorer Github地址： &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/lostindark/DriverStoreExplorer&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/lostindark/DriverStoreExplorer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/lostindark/DriverStoreExplorer/raw/master/Screenshots/Screenshot.png&quot; alt=&quot;Screenshot&quot;&gt;&lt;/p&gt;
+&lt;p&gt;DriverStore Explorer [RAPR] makes it easier to deal with Windows driver store. Supported operations include enumeration, adding a driver package (stage), adding &amp;amp; installing, deletion and force deletion from the driver store.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在OpenWrt 路由器上运行 asp.net core</title>
+    <link href="http://xuxiaorong2014.github.io/programming/dotnet-core-openwrt.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/dotnet-core-openwrt.html</id>
+    <published>2019-08-21T08:16:08.000Z</published>
+    <updated>2019-09-17T01:53:40.899Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前只支持 OpenWrt x86_64， 所以只能在软路由上跑。 等微软发布ARM/ARM64 的.NET Core musl binary后就可以在普通家用路由器上运行了（只要内存够大）<br>另外openwrt 的服务配置 procd 好像不支持 working directory, 只能在dotnet 加个参数 –contentroot 来指定，否则静态文件都无法显示</p><a id="more"></a><p>在路由器上安装依赖 </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@OpenWrt:/# opkg install lttng-ust libopenssl libstdcpp zlib libintl-full</span><br></pre></td></tr></table></figure><p>发布项目时需加上参数 -r linux-musl-x64  </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet publish -c Release -f netcoreapp2.1 -r linux-musl-x64</span><br></pre></td></tr></table></figure><p>将生成的文件 bin\Release\netcoreapp2.1\linux-musl-x64\publish 全部复制到路由器上(我放在挂载的U盘上 )</p><p>先执行测试</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@OpenWrt:/# /mnt/sdb1/publish/myWebApp --urls http://*:81 --contentroot /mnt/sdb1/publish</span><br></pre></td></tr></table></figure><p>添加启动项：</p><p>编写一个rc脚本    /etc/init.d/aspdotnet </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh /etc/rc.common</span><br><span class="line">USE_PROCD=1</span><br><span class="line">START=99</span><br><span class="line">STOP=10</span><br><span class="line"></span><br><span class="line">start_service() &#123;</span><br><span class="line">  procd_open_instance</span><br><span class="line">  procd_set_param command /mnt/sdb1/publish/myWebApp --urls http://*:81 --contentroot /mnt/sdb1/publish</span><br><span class="line">  procd_set_param respawn $&#123;respawn_threshold:-3600&#125; $&#123;respawn_timeout:-5&#125; $&#123;respawn_retry:-5&#125;</span><br><span class="line">  procd_set_param limits core=&quot;unlimited&quot;</span><br><span class="line">  procd_set_param stdout 1</span><br><span class="line">  procd_set_param stderr 1</span><br><span class="line">  procd_close_instance</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>openwrt的procd 好像没法设置工作目录，只能用参数 –contentroot 来指定</p><p>赋予可执行权限　</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root@OpenWrt:/# chmod +x /etc/init.d/aspdotnet</span><br></pre></td></tr></table></figure><p>启用服务，运行服务</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@OpenWrt:/# /etc/init.d/aspdotnet enable</span><br><span class="line">root@OpenWrt:/# /etc/init.d/aspdotnet start</span><br></pre></td></tr></table></figure><p>然后就可以访问 http://路由器地址:81/  访问了 </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;目前只支持 OpenWrt x86_64， 所以只能在软路由上跑。 等微软发布ARM/ARM64 的.NET Core musl binary后就可以在普通家用路由器上运行了（只要内存够大）&lt;br&gt;另外openwrt 的服务配置 procd 好像不支持 working directory, 只能在dotnet 加个参数 –contentroot 来指定，否则静态文件都无法显示&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Alpine Linux 上部署 asp.net core</title>
+    <link href="http://xuxiaorong2014.github.io/programming/dotnet-core-alpine-linux.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/dotnet-core-alpine-linux.html</id>
+    <published>2019-08-12T02:15:08.000Z</published>
+    <updated>2019-09-17T01:53:53.615Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>安装依赖</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apk add libstdc++</span><br><span class="line">apk add icu</span><br><span class="line">apk add libintl</span><br></pre></td></tr></table></figure><a id="more"></a><ol start="2"><li>下载 .NET Core Runtime  下载地址</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://download.visualstudio.microsoft.com/download/pr/dc2bad3f-7ebc-4579-990a-52e16dff204b/260ce8c864f201717dfe75f4146c3b40/aspnetcore-runtime-2.1.12-linux-musl-x64.tar.gz</span><br></pre></td></tr></table></figure><ol start="3"><li>解包</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p /home/dotnet &amp;&amp; tar zxf aspnetcore-runtime-2.1.12-linux-musl-x64.tar.gz -C /home/dotnet</span><br></pre></td></tr></table></figure><p>4.配置环境变量</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line">export CHARSET=UTF-8</span><br><span class="line">export LANG=C.UTF-8</span><br><span class="line">#增加一行 DOTNET_ROOT</span><br><span class="line">export DOTNET_ROOT=/home/dotnet </span><br><span class="line">#结尾加上 :/home/dotnet</span><br><span class="line">export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/dotnet</span><br><span class="line">export PAGER=less</span><br><span class="line">export PS1=&apos;\h:\w\$ &apos;</span><br><span class="line">umask 022</span><br><span class="line"></span><br><span class="line">for script in /etc/profile.d/*.sh ; do</span><br><span class="line">        if [ -r $script ] ; then</span><br><span class="line">                . $script</span><br><span class="line">        fi</span><br><span class="line">done</span><br></pre></td></tr></table></figure><p>5.编译项目，将项目生成的所有文件都复制到一个文件夹，例如 /home/wwwroot </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dotnet publish -c Release -f netcoreapp2.2 -r linux-musl-x64</span><br></pre></td></tr></table></figure><p>6.配置后台自动启动</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/local.d/dotnetcore.start</span><br><span class="line">#!/bin/sh</span><br><span class="line">nohup dotnet myWebApp.dll --urls http://*:80 --contentroot /home/wwwroot</span><br></pre></td></tr></table></figure><p>更改脚本为可执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chmod +x dotnetcore.start</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">rc-update add local</span><br></pre></td></tr></table></figure><p>　　</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;安装依赖&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apk add libstdc++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apk add icu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apk add libintl&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Alpine Linux 设置 samba windows局域网文件共享</title>
+    <link href="http://xuxiaorong2014.github.io/programming/alpine-linux-samba-server.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/alpine-linux-samba-server.html</id>
+    <published>2019-08-09T07:08:08.000Z</published>
+    <updated>2019-09-17T01:54:01.423Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装软件包:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># apk add samba</span><br></pre></td></tr></table></figure><a id="more"></a><p>创建需要共享的目录:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># mkdir /mnt/sdb1</span><br><span class="line"># chmod 0777 /mnt/sdb1</span><br></pre></td></tr></table></figure><p>编辑配置文件 /etc/samba/smb.conf ，修改内容为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">   workgroup = WORKGROUP</span><br><span class="line">   netbios name = ALPINE</span><br><span class="line">   server string = Samba Server</span><br><span class="line">   max log size = 50</span><br><span class="line">   map to guest = Bad User</span><br><span class="line">   guest account = nobody</span><br><span class="line">   ;domain master = yes</span><br><span class="line">   ;local master = yes</span><br><span class="line">   ;preferred master = yes</span><br><span class="line">   ;os level = 512</span><br><span class="line">   ;wins support = yes</span><br><span class="line"></span><br><span class="line">[share]</span><br><span class="line">   comment = share</span><br><span class="line">   path = /mnt/sdb1</span><br><span class="line">   public = yes</span><br><span class="line">   writable = yes</span><br><span class="line">   printable = no</span><br><span class="line">   create mask = 0765</span><br><span class="line">   directory mask = 755</span><br><span class="line">   browsable = yes</span><br></pre></td></tr></table></figure><p>配置系统服务</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># rc-update add samba</span><br><span class="line"># rc-service samba start</span><br></pre></td></tr></table></figure><p>然后在windows系统打开网上邻居，或者文件管理器地址栏直接输入 \ALPINE 就能访问共享了</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;安装软件包:&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# apk add samba&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>阿里云海外服务器禁用25端口发邮件的解决方法</title>
+    <link href="http://xuxiaorong2014.github.io/programming/mailkit.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/mailkit.html</id>
+    <published>2019-08-09T06:56:08.000Z</published>
+    <updated>2019-09-17T01:54:10.384Z</updated>
+    
+    <content type="html"><![CDATA[<p>使用阿里云香港服务器时发现发邮件失败，检查发现阿里云香港服务器禁用了25端口</p><p>解决方法是使用其它端口，例如465 ，使用ssl加密</p><a id="more"></a><p>尝试发送邮件代码改为：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">using(var client = new SmtpClient())</span><br><span class="line">&#123;</span><br><span class="line">client.EnableSsl = true;</span><br><span class="line">client.Port = 465;</span><br><span class="line">......</span><br><span class="line">       client.Send(msg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这样还是不行，报操作已超时错误，经查询，System.Net.Mail支持Explicit SSL但是不支持Implicit SSL<br>尝试改用System.Web.Mail ,提示 “类库已过时”。</p><p>最终使用MailKit 类库解决问题：</p><p>安装nuget 包</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PM&gt;Install-Package MailKit -Version 2.2.0</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">using System;</span><br><span class="line">using MimeKit;</span><br><span class="line">using MailKit.Net.Smtp;</span><br><span class="line">using System.Threading.Tasks;</span><br><span class="line"></span><br><span class="line">namespace MyWebApp</span><br><span class="line">&#123;</span><br><span class="line">    public class EmailSender</span><br><span class="line">    &#123;</span><br><span class="line">         private string _displayname = &quot;Your Name&quot;;</span><br><span class="line">         private string _from = &quot;xxxxxx@aliyun.com&quot;;</span><br><span class="line">         private string _host = &quot;smtp.aliyun.com&quot;;</span><br><span class="line">         private int _port = 465;</span><br><span class="line">         private string _password = &quot;xxxxxx&quot;;</span><br><span class="line">         private bool _enablessl = true;</span><br><span class="line">  </span><br><span class="line">         public void SendEmail(string to, string subject, string body)</span><br><span class="line">         &#123;</span><br><span class="line">             var message = new MimeMessage();</span><br><span class="line">             message.From.Add(new MailboxAddress(_displayname, _from));</span><br><span class="line">             message.To.Add(new MailboxAddress(to));</span><br><span class="line">             message.Subject = subject;</span><br><span class="line">             message.Body = new TextPart(&quot;html&quot;) &#123; Text = body &#125;;</span><br><span class="line">             using (var client = new SmtpClient())</span><br><span class="line">             &#123;</span><br><span class="line">                 client.ServerCertificateValidationCallback = (s, c, h, e) =&gt; true;</span><br><span class="line">                 client.Connect(_host, _port, _enablessl);</span><br><span class="line">                 client.Authenticate(_from, _password);</span><br><span class="line">                 client.Send(message);</span><br><span class="line">                 client.Disconnect(true);</span><br><span class="line">             &#125;</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用阿里云香港服务器时发现发邮件失败，检查发现阿里云香港服务器禁用了25端口&lt;/p&gt;
+&lt;p&gt;解决方法是使用其它端口，例如465 ，使用ssl加密&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>解决windows 连接 l2tp vpn 失败的方法</title>
+    <link href="http://xuxiaorong2014.github.io/system/windowsl2tp.html"/>
+    <id>http://xuxiaorong2014.github.io/system/windowsl2tp.html</id>
+    <published>2018-09-13T06:26:29.000Z</published>
+    <updated>2019-09-16T06:44:35.913Z</updated>
+    
+    <content type="html"><![CDATA[<p>注册表</p><p>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\Parameters</p><p>新建 DWORD(32) “ProhibitIPSec” 值 = 1</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;注册表&lt;/p&gt;
+&lt;p&gt;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\Parameters&lt;/p&gt;
+&lt;p&gt;新建 DWORD(32) “ProhibitIPSec” 值 = 1&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关闭 SMB V1协议</title>
+    <link href="http://xuxiaorong2014.github.io/system/closesmbv1.html"/>
+    <id>http://xuxiaorong2014.github.io/system/closesmbv1.html</id>
+    <published>2018-09-12T01:47:53.000Z</published>
+    <updated>2019-09-16T06:44:35.904Z</updated>
+    
+    <content type="html"><![CDATA[<p>勒索病毒会通过网络进行复制、加密用户文件来勒索赎金，漏洞就是 SMB V1协议</p><p>关闭 SMB V1协议的方法是：</p><p>对于windows 8 以上，在 powershell 里运行命令：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Set-SmbServerConfiguration -EnableSMB1Protocol $false</span><br></pre></td></tr></table></figure><p>对于 windows 7 : </p><p>注册表打开 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\mrxsmb10 新建–DWORD（32位） “Start” 值等于 4 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 新建 字符串值 “DependOnService“ 在数值数据中输入 “Bowser”,”MRxSmb20”,”NSI”</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;勒索病毒会通过网络进行复制、加密用户文件来勒索赎金，漏洞就是 SMB V1协议&lt;/p&gt;
+&lt;p&gt;关闭 SMB V1协议的方法是：&lt;/p&gt;
+&lt;p&gt;对于windows 8 以上，在 powershell 里运行命令：&lt;/p&gt;
+&lt;figure class=&quot;highlight pl
+      
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub 使用方法</title>
+    <link href="http://xuxiaorong2014.github.io/programming/git.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/git.html</id>
+    <published>2018-04-25T14:34:02.000Z</published>
+    <updated>2019-09-16T06:45:02.388Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.客户端下载地址： msysgit.github.io</p><p>2.下载项目： git clone  <a href="https://xxx.xxx.git/" target="_blank" rel="noopener">https://xxx.xxx.git</a></p><p>3.将改动的地方添加到版本管理器 git add .</p><p>4.提交到本地的版本控制库 git commit -m “changes log”</p><p>5.提交到 github账号里 git push -u origin master</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.客户端下载地址： msysgit.github.io&lt;/p&gt;
+&lt;p&gt;2.下载项目： git clone  &lt;a href=&quot;https://xxx.xxx.git/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://xxx.xxx.git&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Grub4Dos开票机系统选择菜单</title>
+    <link href="http://xuxiaorong2014.github.io/system/grub4dosmenu.html"/>
+    <id>http://xuxiaorong2014.github.io/system/grub4dosmenu.html</id>
+    <published>2018-04-18T03:01:08.000Z</published>
+    <updated>2019-09-17T01:54:22.504Z</updated>
+    
+    <content type="html"><![CDATA[<p>Grub4Dos 多系统选择菜单, 使一台电脑同时运行多家公司的开票软件</p><a id="more"></a><p><a href="http://grub4dos.chenall.net/" target="_blank" rel="noopener">grub4dos下载</a></p><p><a href="/images/grub4dosmenu/FONT_CN.GZ">grub4dos中文字体</a></p><p><a href="/images/grub4dosmenu/back.lzma">grub4dos背景图片</a></p><p>配置文件 menu.lst</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">color white/blue yellow/red white/blue white/blue</span><br><span class="line">timeout 60</span><br><span class="line">color border=0xEEFFEE</span><br><span class="line">default /default</span><br><span class="line">debug off</span><br><span class="line">font /boot/grub/font_cn.gz</span><br><span class="line">graphicsmode -1 640:800 320:600 16:24 || graphicsmode -1 -1 -1 24:32</span><br><span class="line">splashimage /boot/grub/back.lzma</span><br><span class="line">setmenu --font-spacing=1:8 --string=20=1=0xFFFFFF=&quot;开票机系统选择菜单&quot;</span><br><span class="line">setmenu --box x=8 w=40 y=3 h=8 l=1 --ver-off</span><br><span class="line">setmenu --lang=zh --auto-num-on</span><br><span class="line">setmenu --timeout=42=3=0xEEFFEE </span><br><span class="line">title 上海润新礼品有限公司</span><br><span class="line">rootnoverify (hd0,0)</span><br><span class="line">chainloader /bootmgr</span><br><span class="line">title 上海存锐贸易有限公司</span><br><span class="line">rootnoverify (hd0,1)</span><br><span class="line">chainloader + 1</span><br><span class="line">title 上海尚珞商务咨询服务中心</span><br><span class="line">rootnoverify (hd0,2)</span><br><span class="line">chainloader + 1</span><br><span class="line"> </span><br><span class="line">73DE:0080F88021F82208251020A0204070A023182C0623F8220822082208A3F80208</span><br></pre></td></tr></table></figure><p>选择菜单效果图</p><p><img src="/images/grub4dosmenu/splashimage.png" alt="效果图"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Grub4Dos 多系统选择菜单, 使一台电脑同时运行多家公司的开票软件&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>kms 激活windows 和 office</title>
+    <link href="http://xuxiaorong2014.github.io/system/kmswindowsoffice.html"/>
+    <id>http://xuxiaorong2014.github.io/system/kmswindowsoffice.html</id>
+    <published>2018-04-10T04:03:53.000Z</published>
+    <updated>2019-09-16T06:44:35.893Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="激活windows"><a href="#激活windows" class="headerlink" title="激活windows"></a>激活windows</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX</span><br><span class="line">slmgr /skms 192.168.x.x</span><br><span class="line">slmgr /ato</span><br></pre></td></tr></table></figure><h2 id="常用Windows-KMS-keys-来自微软"><a href="#常用Windows-KMS-keys-来自微软" class="headerlink" title="常用Windows KMS keys ,来自微软"></a>常用Windows KMS keys ,来自微软</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Windows 7 Enterprise    33PXH-7Y6KF-2VJC9-XBBR8-HVTHH</span><br><span class="line">Windows 8.1 Professional    GCRJD-8NW9H-F2CDX-CCM8D-9D6T9</span><br><span class="line">Windows 10 Professional W269N-WFGWX-YVC9B-4J6C9-T83GX</span><br></pre></td></tr></table></figure><h2 id="激活office"><a href="#激活office" class="headerlink" title="激活office"></a>激活office</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cscript ospp.vbs /inpkey:VYBBJ-TRJPB-QFQRF-QFT4D-H3GVB</span><br><span class="line">cscript ospp.vbs  /sethst:192.168.x.x </span><br><span class="line">cscript ospp.vbs  /act</span><br><span class="line">cscript ospp.vbs  /dstatus</span><br></pre></td></tr></table></figure><h2 id="常用Office-KMS-keys"><a href="#常用Office-KMS-keys" class="headerlink" title="常用Office KMS keys"></a>常用Office KMS keys</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Office 2010 VYBBJ-TRJPB-QFQRF-QFT4D-H3GVB</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;激活windows&quot;&gt;&lt;a href=&quot;#激活windows&quot; class=&quot;headerlink&quot; title=&quot;激活windows&quot;&gt;&lt;/a&gt;激活windows&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t
+      
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>openwrt 架设 z-blog博客网站</title>
+    <link href="http://xuxiaorong2014.github.io/programming/openwrtzblog.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/openwrtzblog.html</id>
+    <published>2018-03-30T02:17:00.000Z</published>
+    <updated>2019-09-17T01:54:40.481Z</updated>
+    
+    <content type="html"><![CDATA[<p>z-blog 需要 php + sqlite 环境<br>openwrt已经内置的uhttpd web服务器，再安装php 和 sqlite数据库支持，就可以运行 php 编写的z-blog 博客系统了</p><a id="more"></a><h2 id="安装程序"><a href="#安装程序" class="headerlink" title="安装程序"></a><a href="http://xuxiaorong2014.github.io/#%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F" title="安装程序"></a>安装程序</h2><p>php5<br>php5-cgi<br>php5-mod-ctype<br>php5-mod-curl<br>php5-mod-hash<br>php5-mod-json<br>php5-mod-pdo<br>php5-mod-pdo-sqlite<br>php5-mod-session<br>php5-mod-simplexml<br>php5-mod-sqlite<br>php5-mod-sqlite3<br>php5-mod-tokenizer<br>php5-mod-xml<br>zoneinfo-asia</p><p>zoneinfo-asia这个包一定要安装，否则zblog一直报错，说date()函数的时区不正确</p><h2 id="配置php"><a href="#配置php" class="headerlink" title="配置php"></a><a href="http://xuxiaorong2014.github.io/#%E9%85%8D%E7%BD%AEphp" title="配置php"></a>配置php</h2><p>修改/etc/php.ini。</p><p>去掉下面行前面注释：<br>extension=ctype.so<br>extension=curl.so<br>extension=hash.so<br>extension=json.so<br>extension=pdo.so<br>extension=pdo_sqlite.so<br>extension=sqlite.so<br>extension=sqlite3.so<br>extension=session.so<br>extension=tokenizer.so<br>extension=xml.so<br>extension=xmlreader.so<br>extension=xmlwriter.so</p><p>修改行：</p><p>short_open_tag = On<br>;doc_root = “/www”<br>date.timezone = Asia/Shanghai</p><h2 id="配置uhttpd"><a href="#配置uhttpd" class="headerlink" title="配置uhttpd"></a><a href="http://xuxiaorong2014.github.io/#%E9%85%8D%E7%BD%AEuhttpd" title="配置uhttpd"></a>配置uhttpd</h2><p>在/etc/config/uhttpd最后添加：</p><p>config uhttpd web<br>list listen_http 0.0.0.0:81<br>option home /mnt/sdb1/www<br>option index_page index.php<br>list interpreter “.php=/usr/bin/php-cgi”</p><p>81为访问端口，/mnt/sdb1/www 为放置网页的目录(我是放在挂载的盘上)，这些都可以修改。</p><h2 id="安装z-blog"><a href="#安装z-blog" class="headerlink" title="安装z-blog"></a><a href="http://xuxiaorong2014.github.io/#%E5%AE%89%E8%A3%85z-blog" title="安装z-blog"></a>安装z-blog</h2><p>到  <a href="http://www.zblogcn.com/zblogphp/" target="_blank" rel="noopener">http://www.zblogcn.com/zblogphp/</a>  下载安装包</p><p>把下载来的压缩包解压到 sdb1/www 下面</p><p>然后访问 路由器 ip 例如<a href="http://192.168.1.1:81/" target="_blank" rel="noopener">http://192.168.1.1:81/</a>  即可</p>]]></content>
+    
+    <summary type="html">
+    
+      z-blog 需要 php + sqlite 环境 openwrt已经内置的uhttpd web服务器，再安装php 和 sqlite数据库支持，就可以运行 php 编写的z-blog 博客系统了
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用reagentc命令设置系统还原功能</title>
+    <link href="http://xuxiaorong2014.github.io/system/reagentc.html"/>
+    <id>http://xuxiaorong2014.github.io/system/reagentc.html</id>
+    <published>2018-03-14T03:24:13.000Z</published>
+    <updated>2019-09-17T01:55:03.465Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">attrib -r -s -h C:\Recovery\WindowsRE\boot.sdi</span><br><span class="line">attrib -r -s -h C:\Recovery\WindowsRE\Winre.wim</span><br><span class="line">md D:\Recovery\WindowsRE</span><br><span class="line">copy C:\Recovery\WindowsRE\boot.sdi D:\Recovery\WindowsRE</span><br><span class="line">copy C:\Recovery\WindowsRE\Winre.wim D:\Recovery\WindowsRE</span><br><span class="line">reagentc /disable</span><br><span class="line">copy G:\sources\install.wim D:\Recovery\WindowsRE</span><br><span class="line">reagentc /setreimage /path D:\Recovery\WindowsRE</span><br><span class="line">reagentc /setosimage /path D:\Recovery\WindowsRE /index 3</span><br><span class="line">reagentc /enable</span><br></pre></td></tr></table></figure><a id="more"></a><p>配置 Windows 恢复环境(Windows RE)和系统初始化。<br>REAGENTC.EXE<br>可以指定以下命令:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/info             - 显示 Windows RE 和系统初始化配置信息。</span><br><span class="line">/setreimage       - 设置自定义 Windows RE 映像的位置。</span><br><span class="line">/enable           - 启用 Windows RE。</span><br><span class="line">/disable          - 禁用 Windows RE。</span><br><span class="line">/boottore         - 将系统配置为在下次系统启动时启动 Windows RE。</span><br><span class="line">/setosimage       - 设置系统初始化所用的恢复映像的位置。</span><br><span class="line">/setbootshelllink - 在启动菜单的“初始化和还原”页中添加条目。</span><br></pre></td></tr></table></figure><p>有关这些命令及其参数的详细信息，请键入<br>REAGENTC.EXE /?。<br>示例:<br>REAGENTC.EXE /setreimage /?<br>REAGENTC.EXE /disable /?</p><p>备份系统：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">recimg /createimage C:\   得到映像C:\CustomRefresh.wim</span><br><span class="line">copy CustomRefresh.wim D:\Recovery\WindowsRE\install.wim</span><br><span class="line">reagentc /setreimage /path E:\WIM /index &quot;1&quot;</span><br><span class="line">recimg /setcurrent C:\</span><br><span class="line">recimg /createimage C:\可以进行增量备份，只需改变/index</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;attrib -r -s -h C:\Recovery\WindowsRE\boot.sdi&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;attrib -r -s -h C:\Recovery\WindowsRE\Winre.wim&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;md D:\Recovery\WindowsRE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy C:\Recovery\WindowsRE\boot.sdi D:\Recovery\WindowsRE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy C:\Recovery\WindowsRE\Winre.wim D:\Recovery\WindowsRE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reagentc /disable&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;copy G:\sources\install.wim D:\Recovery\WindowsRE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reagentc /setreimage /path D:\Recovery\WindowsRE&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reagentc /setosimage /path D:\Recovery\WindowsRE /index 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;reagentc /enable&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://xuxiaorong2014.github.io/programming/hello-world.html"/>
+    <id>http://xuxiaorong2014.github.io/programming/hello-world.html</id>
+    <published>2018-03-06T06:38:08.000Z</published>
+    <updated>2019-09-17T01:55:42.791Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="开发" scheme="http://xuxiaorong2014.github.io/categories/programming/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用dism bcdboot命令部署windows</title>
+    <link href="http://xuxiaorong2014.github.io/system/dismbcdboot.html"/>
+    <id>http://xuxiaorong2014.github.io/system/dismbcdboot.html</id>
+    <published>2015-05-25T03:13:57.000Z</published>
+    <updated>2019-09-17T01:55:14.800Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /Apply-Image /ImageFile:E:\sources\install.wim /Index:1 /ApplyDir:C:\</span><br></pre></td></tr></table></figure><a id="more"></a><p>命令解释：<br>/Apply-Image - 应用一个映像。<br>/ApplyDir - 指定应用目录。<br>/Index - 指定索引。此项不能省略。 可选项：<br>/WIMBoot - 生成生成指针文件 /compact - 压缩系统文件，只支持win10</p><p>生成用于wimboot部署的镜像文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Dism /Export-Image /WIMBoot /SourceImageFile:G:\sources\install.wim /SourceIndex:1 /DestinationImageFile:D:\wimboot.wim</span><br></pre></td></tr></table></figure><p>由于 Windows 系统原始（WIM 映像）中没有启动引导文件，需要添加启动引导：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdboot C:\windows /s C: /l zh-cn</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Dism /Apply-Image /ImageFile:E:\sources\install.wim /Index:1 /ApplyDir:C:\&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="系统维护" scheme="http://xuxiaorong2014.github.io/categories/system/"/>
+    
+    
+  </entry>
+  
+</feed>
