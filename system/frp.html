@@ -1,249 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
+
+<head>
   <meta charset="utf-8">
-  
-  
-  <title>内网穿透工具--FRP | 学无止境</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="FRP 项目地址：https://github.com/fatedier/frp FRP 下载地址：https://github.com/fatedier/frp/releases linux 服务端安装:123wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gztar">
-<meta property="og:type" content="article">
-<meta property="og:title" content="内网穿透工具--FRP">
-<meta property="og:url" content="http://xuxiaorong2014.github.io/system/frp.html">
-<meta property="og:site_name" content="学无止境">
-<meta property="og:description" content="FRP 项目地址：https://github.com/fatedier/frp FRP 下载地址：https://github.com/fatedier/frp/releases linux 服务端安装:123wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gztar">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-15T06:27:27.700Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="内网穿透工具--FRP">
-<meta name="twitter:description" content="FRP 项目地址：https://github.com/fatedier/frp FRP 下载地址：https://github.com/fatedier/frp/releases linux 服务端安装:123wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gztar">
-  
-    <link rel="alternate" href="/atom.xml" title="学无止境" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.ico">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-  
+  <title>内网穿透工具--FRP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">学无止境</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">任何一个人都有值得自己学习的地方</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">首页</a>
-        
-          <a class="main-nav-link" href="/archives">归档</a>
-        
-          <a class="main-nav-link" href="/links.html">收藏</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://xuxiaorong2014.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-frp" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/system/frp.html" class="article-date">
-  <time datetime="2019-10-15T15:20:20.000Z" itemprop="datePublished">2019-10-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/system/">系统维护</a>
-  </div>
+  <div class="container">
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
+
+    <h1>
       内网穿透工具--FRP
     </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>FRP 项目地址：<a href="https://github.com/fatedier/frp" target="_blank" rel="noopener">https://github.com/fatedier/frp</a></p>
-<p>FRP 下载地址：<a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener">https://github.com/fatedier/frp/releases</a></p>
-<h2 id="linux-服务端安装"><a href="#linux-服务端安装" class="headerlink" title="linux 服务端安装:"></a>linux 服务端安装:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gz</span><br><span class="line">tar xzvf frp_0.29.0_linux_386.tar.gz</span><br><span class="line">mv frp_0.29.0_linux_386 frp</span><br></pre></td></tr></table></figure>
-
-<h2 id="linux-服务端配置"><a href="#linux-服务端配置" class="headerlink" title="linux 服务端配置:"></a>linux 服务端配置:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ cat frps.ini</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line">#默认配置中监听的是 7000 端口，可根据自己实际情况修改。</span><br><span class="line">bind_port = 7000  </span><br><span class="line">#web服务绑定端口  </span><br><span class="line">vhost_http_port = 8080  </span><br><span class="line"></span><br><span class="line">#启动 FRP 服务端</span><br><span class="line">$ ./frps -c ./frps.ini</span><br></pre></td></tr></table></figure>
-
-<p>通过上面简单的两步就可以成功启动一个监听在 7000 端口的 FRP 服务端。</p>
-<h2 id="添加开机启动等服务"><a href="#添加开机启动等服务" class="headerlink" title="添加开机启动等服务"></a>添加开机启动等服务</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">首先先新建一个 写有命令的可执行文件</span><br><span class="line">vi /usr/local/frp/start_frp</span><br><span class="line">nohup /usr/local/frp/frps -c /usr/local/frp/frps.ini &gt;/usr/local/frp/log.txt 2&gt;&amp;1 &amp;</span><br><span class="line">给此文件添加执行权限</span><br><span class="line">chmod +x /usr/local/frp/start_frp</span><br></pre></td></tr></table></figure>
-
-<p>创建Frp执行脚本。<br>vi /etc/init.d/frp</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line">#</span><br><span class="line"># frp startup script for the server</span><br><span class="line">#</span><br><span class="line"># chkconfig: 2345 90 10</span><br><span class="line"># description: start the frp</span><br><span class="line">#</span><br><span class="line"># Source function library</span><br><span class="line">. /etc/rc.d/init.d/functions</span><br><span class="line"> </span><br><span class="line">#脚本名称</span><br><span class="line">prog=frp</span><br><span class="line"> </span><br><span class="line">#frp安装目录</span><br><span class="line">FRP_HOME=/usr/local/frp/</span><br><span class="line">export FRP_HOME</span><br><span class="line"> </span><br><span class="line">#frp运行命令</span><br><span class="line">FRP_RUN_SERVICE=/usr/local/frp/start_frp</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">case &quot;$1&quot; in</span><br><span class="line">    start)</span><br><span class="line">    echo &quot;Starting frp...&quot;</span><br><span class="line">    $FRP_RUN_SERVICE</span><br><span class="line">    ;;</span><br><span class="line"> </span><br><span class="line">*)</span><br><span class="line">    echo &quot;Usage: $prog &#123;start&#125;&quot;</span><br><span class="line">    ;;</span><br><span class="line">esac</span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
-
-<p>修改文件为可运行文件： chmod a+x /etc/init.d/frp<br>查看frp开机启动情况： chkconfig –list<br>添加到系统启动队列中： chkconfig –add frp<br>启动服务: service frp start</p>
-<h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置:"></a>客户端配置:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">$ vim frpc.ini</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line"># server_addr 为 FRP 服务端的公网 IP</span><br><span class="line">server_addr = 4.3.2.1</span><br><span class="line"># server_port 为 FRP 服务端监听的端口</span><br><span class="line">server_port = 7000</span><br><span class="line"></span><br><span class="line">#ssh 配置</span><br><span class="line">[ssh]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 22</span><br><span class="line">remote_port = 6000</span><br><span class="line"></span><br><span class="line">#虚拟主机配置</span><br><span class="line">[web]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 80</span><br><span class="line">custom_domains = wannabe.fun</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">启动 FRP 客户端</span><br><span class="line">$ ./frpc -c ./frpc.ini</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://xuxiaorong2014.github.io/system/frp.html" data-id="ckj2l32om0008qko2c57v6per" data-title="内网穿透工具--FRP" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/uncategorized/m3u8.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          我的直播源
-        
-      </div>
-    </a>
-  
-  
-    <a href="/system/windows-10-jihuo.html" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Windows 10 专业版激活</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">开发</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/uncategorized/">未分类</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/system/">系统维护</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/09/">九月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">九月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/uncategorized/m3u8.html">我的直播源</a>
-          </li>
-        
-          <li>
-            <a href="/system/frp.html">内网穿透工具--FRP</a>
-          </li>
-        
-          <li>
-            <a href="/system/windows-10-jihuo.html">Windows 10 专业版激活</a>
-          </li>
-        
-          <li>
-            <a href="/system/driver-store-explorer.html">用 DriverStore Explorer 清理 DriverStore 驱动文件夹，释放系统盘</a>
-          </li>
-        
-          <li>
-            <a href="/programming/dotnet-core-openwrt.html">在OpenWrt 路由器上运行 asp.net core</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 许肖荣<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">首页</a>
-  
-    <a href="/archives" class="mobile-nav-link">归档</a>
-  
-    <a href="/links.html" class="mobile-nav-link">收藏</a>
-  
-</nav>
-    
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-  <script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-<script src="/js/script.js"></script>
 
 
 
+    <p>FRP 项目地址：<a href="https://github.com/fatedier/frp" target="_blank"
+        rel="noopener">https://github.com/fatedier/frp</a></p>
+    <p>FRP 下载地址：<a href="https://github.com/fatedier/frp/releases" target="_blank"
+        rel="noopener">https://github.com/fatedier/frp/releases</a></p>
+    <h2 id="linux-服务端安装"><a href="#linux-服务端安装" class="headerlink" title="linux 服务端安装:"></a>linux 服务端安装:</h2>
+    <figure class="highlight plain">
+      <table>
+        <tr>
+          <td class="gutter">
+            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+          </td>
+          <td class="code">
+            <pre><span class="line">wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gz</span><br><span class="line">tar xzvf frp_0.29.0_linux_386.tar.gz</span><br><span class="line">mv frp_0.29.0_linux_386 frp</span><br></pre>
+          </td>
+        </tr>
+      </table>
+    </figure>
+
+    <h2 id="linux-服务端配置"><a href="#linux-服务端配置" class="headerlink" title="linux 服务端配置:"></a>linux 服务端配置:</h2>
+    <figure class="highlight plain">
+      <table>
+        <tr>
+          <td class="gutter">
+            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre>
+          </td>
+          <td class="code">
+            <pre><span class="line">$ cat frps.ini</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line">#默认配置中监听的是 7000 端口，可根据自己实际情况修改。</span><br><span class="line">bind_port = 7000  </span><br><span class="line">#web服务绑定端口  </span><br><span class="line">vhost_http_port = 8080  </span><br><span class="line"></span><br><span class="line">#启动 FRP 服务端</span><br><span class="line">$ ./frps -c ./frps.ini</span><br></pre>
+          </td>
+        </tr>
+      </table>
+    </figure>
+
+    <p>通过上面简单的两步就可以成功启动一个监听在 7000 端口的 FRP 服务端。</p>
+    <h2 id="添加开机启动等服务"><a href="#添加开机启动等服务" class="headerlink" title="添加开机启动等服务"></a>添加开机启动等服务</h2>
+    <figure class="highlight plain">
+      <table>
+        <tr>
+          <td class="gutter">
+            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre>
+          </td>
+          <td class="code">
+            <pre><span class="line">首先先新建一个 写有命令的可执行文件</span><br><span class="line">vi /usr/local/frp/start_frp</span><br><span class="line">nohup /usr/local/frp/frps -c /usr/local/frp/frps.ini &gt;/usr/local/frp/log.txt 2&gt;&amp;1 &amp;</span><br><span class="line">给此文件添加执行权限</span><br><span class="line">chmod +x /usr/local/frp/start_frp</span><br></pre>
+          </td>
+        </tr>
+      </table>
+    </figure>
+
+    <p>创建Frp执行脚本。<br>vi /etc/init.d/frp</p>
+    <figure class="highlight plain">
+      <table>
+        <tr>
+          <td class="gutter">
+            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre>
+          </td>
+          <td class="code">
+            <pre><span class="line">#!/bin/bash</span><br><span class="line">#</span><br><span class="line"># frp startup script for the server</span><br><span class="line">#</span><br><span class="line"># chkconfig: 2345 90 10</span><br><span class="line"># description: start the frp</span><br><span class="line">#</span><br><span class="line"># Source function library</span><br><span class="line">. /etc/rc.d/init.d/functions</span><br><span class="line"> </span><br><span class="line">#脚本名称</span><br><span class="line">prog=frp</span><br><span class="line"> </span><br><span class="line">#frp安装目录</span><br><span class="line">FRP_HOME=/usr/local/frp/</span><br><span class="line">export FRP_HOME</span><br><span class="line"> </span><br><span class="line">#frp运行命令</span><br><span class="line">FRP_RUN_SERVICE=/usr/local/frp/start_frp</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">case &quot;$1&quot; in</span><br><span class="line">    start)</span><br><span class="line">    echo &quot;Starting frp...&quot;</span><br><span class="line">    $FRP_RUN_SERVICE</span><br><span class="line">    ;;</span><br><span class="line"> </span><br><span class="line">*)</span><br><span class="line">    echo &quot;Usage: $prog &#123;start&#125;&quot;</span><br><span class="line">    ;;</span><br><span class="line">esac</span><br><span class="line">exit 0</span><br></pre>
+          </td>
+        </tr>
+      </table>
+    </figure>
+
+    <p>修改文件为可运行文件： chmod a+x /etc/init.d/frp<br>查看frp开机启动情况： chkconfig –list<br>添加到系统启动队列中： chkconfig –add frp<br>启动服务:
+      service frp start</p>
+    <h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置:"></a>客户端配置:</h2>
+    <figure class="highlight plain">
+      <table>
+        <tr>
+          <td class="gutter">
+            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre>
+          </td>
+          <td class="code">
+            <pre><span class="line">$ vim frpc.ini</span><br><span class="line"></span><br><span class="line">[common]</span><br><span class="line"># server_addr 为 FRP 服务端的公网 IP</span><br><span class="line">server_addr = 4.3.2.1</span><br><span class="line"># server_port 为 FRP 服务端监听的端口</span><br><span class="line">server_port = 7000</span><br><span class="line"></span><br><span class="line">#ssh 配置</span><br><span class="line">[ssh]</span><br><span class="line">type = tcp</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 22</span><br><span class="line">remote_port = 6000</span><br><span class="line"></span><br><span class="line">#虚拟主机配置</span><br><span class="line">[web]</span><br><span class="line">type = http</span><br><span class="line">local_ip = 127.0.0.1</span><br><span class="line">local_port = 80</span><br><span class="line">custom_domains = wannabe.fun</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">启动 FRP 客户端</span><br><span class="line">$ ./frpc -c ./frpc.ini</span><br></pre>
+          </td>
+        </tr>
+      </table>
+    </figure>
 
   </div>
 </body>
+
 </html>
