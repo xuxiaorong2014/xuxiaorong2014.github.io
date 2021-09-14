@@ -22,47 +22,62 @@
     <p>解决方法是使用其它端口，例如465 ，使用ssl加密</p>
     <a id="more"></a>
     <p>尝试发送邮件代码改为：</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">using(var client = new SmtpClient())</span><br><span class="line">&#123;</span><br><span class="line">	client.EnableSsl = true;</span><br><span class="line">	client.Port = 465;</span><br><span class="line">	......</span><br><span class="line">       client.Send(msg);</span><br><span class="line">&#125;</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
-
+    <code>
+      <pre>
+using(var client = new SmtpClient())
+{
+	client.EnableSsl = true;
+	client.Port = 465;
+	......
+       client.Send(msg);
+}
+      </pre>
+    </code>
+    
     <p>这样还是不行，报操作已超时错误，经查询，System.Net.Mail支持Explicit SSL但是不支持Implicit SSL<br>尝试改用System.Web.Mail ,提示 “类库已过时”。</p>
     <p>最终使用MailKit 类库解决问题：</p>
     <p>安装nuget 包</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">PM&gt;Install-Package MailKit -Version 2.2.0</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+    <code>
+      <pre>
+PM>Install-Package MailKit -Version 2.2.0
 
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">using System;</span><br><span class="line">using MimeKit;</span><br><span class="line">using MailKit.Net.Smtp;</span><br><span class="line">using System.Threading.Tasks;</span><br><span class="line"></span><br><span class="line">namespace MyWebApp</span><br><span class="line">&#123;</span><br><span class="line">    public class EmailSender</span><br><span class="line">    &#123;</span><br><span class="line">         private string _displayname = &quot;Your Name&quot;;</span><br><span class="line">         private string _from = &quot;xxxxxx@aliyun.com&quot;;</span><br><span class="line">         private string _host = &quot;smtp.aliyun.com&quot;;</span><br><span class="line">         private int _port = 465;</span><br><span class="line">         private string _password = &quot;xxxxxx&quot;;</span><br><span class="line">         private bool _enablessl = true;</span><br><span class="line">  </span><br><span class="line">         public void SendEmail(string to, string subject, string body)</span><br><span class="line">         &#123;</span><br><span class="line">             var message = new MimeMessage();</span><br><span class="line">             message.From.Add(new MailboxAddress(_displayname, _from));</span><br><span class="line">             message.To.Add(new MailboxAddress(to));</span><br><span class="line">             message.Subject = subject;</span><br><span class="line">             message.Body = new TextPart(&quot;html&quot;) &#123; Text = body &#125;;</span><br><span class="line">             using (var client = new SmtpClient())</span><br><span class="line">             &#123;</span><br><span class="line">                 client.ServerCertificateValidationCallback = (s, c, h, e) =&gt; true;</span><br><span class="line">                 client.Connect(_host, _port, _enablessl);</span><br><span class="line">                 client.Authenticate(_from, _password);</span><br><span class="line">                 client.Send(message);</span><br><span class="line">                 client.Disconnect(true);</span><br><span class="line">             &#125;</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+using System;
+using MimeKit;
+using MailKit.Net.Smtp;
+using System.Threading.Tasks;
+
+namespace MyWebApp
+{
+    public class EmailSender
+    {
+         private string _displayname = "Your Name";
+         private string _from = "xxxxxx@aliyun.com";
+         private string _host = "smtp.aliyun.com";
+         private int _port = 465;
+         private string _password = "xxxxxx";
+         private bool _enablessl = true;
+  
+         public void SendEmail(string to, string subject, string body)
+         {
+             var message = new MimeMessage();
+             message.From.Add(new MailboxAddress(_displayname, _from));
+             message.To.Add(new MailboxAddress(to));
+             message.Subject = subject;
+             message.Body = new TextPart("html") { Text = body };
+             using (var client = new SmtpClient())
+             {
+                 client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                 client.Connect(_host, _port, _enablessl);
+                 client.Authenticate(_from, _password);
+                 client.Send(message);
+                 client.Disconnect(true);
+             }
+         }
+     }
+}
+      </pre>
+    </code>
+     
   </div>
 </body>
 
