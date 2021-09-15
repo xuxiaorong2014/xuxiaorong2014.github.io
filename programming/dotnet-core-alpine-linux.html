@@ -10,118 +10,87 @@
 
 <body>
   <div class="container">
+    <h1>Alpine Linux 上部署 asp.net core</h1>
+    <p>
+      安装依赖
+    </p>
+
+    <pre>
+apk add libstdc++
+apk add icu
+apk add libintl
+	  </pre>
 
 
-    <h1>
-      Alpine Linux 上部署 asp.net core
-    </h1>
+    <p>
+      下载 .NET Core Runtime 下载地址
+    </p>
+
+    <pre>
+wget https://download.visualstudio.microsoft.com/download/pr/dc2bad3f-7ebc-4579-990a-52e16dff204b/260ce8c864f201717dfe75f4146c3b40/aspnetcore-runtime-2.1.12-linux-musl-x64.tar.gz
+	  </pre>
 
 
+    <p>
+      解包
+    </p>
 
-    <ol>
-      <li>安装依赖</li>
-    </ol>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">apk add libstdc++</span><br><span class="line">apk add icu</span><br><span class="line">apk add libintl</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+    <pre>
+mkdir -p /home/dotnet && tar zxf aspnetcore-runtime-2.1.12-linux-musl-x64.tar.gz -C /home/dotnet
+	  </pre>
 
-    <a id="more"></a>
-    <ol start="2">
-      <li>下载 .NET Core Runtime 下载地址</li>
-    </ol>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">wget https://download.visualstudio.microsoft.com/download/pr/dc2bad3f-7ebc-4579-990a-52e16dff204b/260ce8c864f201717dfe75f4146c3b40/aspnetcore-runtime-2.1.12-linux-musl-x64.tar.gz</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
-
-    <ol start="3">
-      <li>解包</li>
-    </ol>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">mkdir -p /home/dotnet &amp;&amp; tar zxf aspnetcore-runtime-2.1.12-linux-musl-x64.tar.gz -C /home/dotnet</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
 
     <p>4.配置环境变量</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">vi /etc/profile</span><br><span class="line">export CHARSET=UTF-8</span><br><span class="line">export LANG=C.UTF-8</span><br><span class="line">#增加一行 DOTNET_ROOT</span><br><span class="line">export DOTNET_ROOT=/home/dotnet </span><br><span class="line">#结尾加上 :/home/dotnet</span><br><span class="line">export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/dotnet</span><br><span class="line">export PAGER=less</span><br><span class="line">export PS1=&apos;\h:\w\$ &apos;</span><br><span class="line">umask 022</span><br><span class="line"></span><br><span class="line">for script in /etc/profile.d/*.sh ; do</span><br><span class="line">        if [ -r $script ] ; then</span><br><span class="line">                . $script</span><br><span class="line">        fi</span><br><span class="line">done</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+vi /etc/profile
+export CHARSET=UTF-8
+export LANG=C.UTF-8
+#增加一行 DOTNET_ROOT
+export DOTNET_ROOT=/home/dotnet 
+#结尾加上 :/home/dotnet
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/dotnet
+export PAGER=less
+export PS1='\h:\w\$ '
+umask 022
+
+for script in /etc/profile.d/*.sh ; do
+        if [ -r $script ] ; then
+                . $script
+        fi
+done
+	  </pre>
+
+
 
     <p>5.编译项目，将项目生成的所有文件都复制到一个文件夹，例如 /home/wwwroot </p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">dotnet publish -c Release -f netcoreapp2.2 -r linux-musl-x64</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+dotnet publish -c Release -f netcoreapp2.2 -r linux-musl-x64
+	  </pre>
+
+
 
     <p>6.配置后台自动启动</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">vi /etc/local.d/dotnetcore.start</span><br><span class="line">#!/bin/sh</span><br><span class="line">nohup dotnet myWebApp.dll --urls http://*:80 --contentroot /home/wwwroot</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+vi /etc/local.d/dotnetcore.start
+#!/bin/sh
+nohup dotnet myWebApp.dll --urls http://*:80 --contentroot /home/wwwroot
+	  </pre>
+
+
 
     <p>更改脚本为可执行</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">chmod +x dotnetcore.start</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">rc-update add local</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+chmod +x dotnetcore.start
+ 
+
+rc-update add local
+</pre>
+
+
   </div>
 </body>
 

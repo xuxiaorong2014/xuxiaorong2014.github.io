@@ -11,58 +11,17 @@
 <body>
   <div class="container">
 
-    <h1>
-      用dism bcdboot命令部署windows
-    </h1>
-
-
-
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">Dism /Apply-Image /ImageFile:E:\sources\install.wim /Index:1 /ApplyDir:C:\</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
-
-    <a id="more"></a>
+    <h1>用dism bcdboot命令部署windows</h1>
+    <pre style="white-space: pre-wrap;"><span class="line">Dism /Apply-Image /ImageFile:E:\sources\install.wim /Index:1 /ApplyDir:C:\</span><br></pre>
     <p>命令解释：<br>/Apply-Image - 应用一个映像。<br>/ApplyDir - 指定应用目录。<br>/Index - 指定索引。此项不能省略。 可选项：<br>/WIMBoot - 生成生成指针文件
       /compact - 压缩系统文件，只支持win10</p>
     <p>生成用于wimboot部署的镜像文件</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">Dism /Export-Image /WIMBoot /SourceImageFile:G:\sources\install.wim /SourceIndex:1 /DestinationImageFile:D:\wimboot.wim</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+    <pre style="white-space: pre-wrap;"><span class="line">Dism /Export-Image /WIMBoot /SourceImageFile:G:\sources\install.wim /SourceIndex:1 /DestinationImageFile:D:\wimboot.wim</span><br></pre>
 
     <p>由于 Windows 系统原始（WIM 映像）中没有启动引导文件，需要添加启动引导：</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">bcdboot C:\windows /s C: /l zh-cn</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
-
-
+    <pre><span class="line">bcdboot C:\windows /s C: /l zh-cn</span><br></pre>
   </div>
+
 </body>
 
 </html>

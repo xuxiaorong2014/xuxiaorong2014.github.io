@@ -15,7 +15,7 @@
 		<p>勒索病毒会通过网络进行复制、加密用户文件来勒索赎金，漏洞就是 SMB V1协议</p>
 		<p>关闭 SMB V1协议的方法是：</p>
 		<p>对于windows 8 以上，在 powershell 里运行命令：</p>
-		<code><pre>Set-SmbServerConfiguration -EnableSMB1Protocol $fals</pre></code>
+		<pre>Set-SmbServerConfiguration -EnableSMB1Protocol $fals</pre>
 		<p>对于 windows 7 : </p>
 		<p>注册表打开 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\mrxsmb10 新建–DWORD（32位） “Start” 值等于 4
 			HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanWorkstation 新建 字符串值 “DependOnService“ 在数值数据中输入

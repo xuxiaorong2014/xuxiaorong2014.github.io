@@ -10,74 +10,51 @@
 
 <body>
   <div class="container">
-
-
-    <h1>
-      Alpine Linux 设置 samba windows局域网文件共享
-    </h1>
-
-
-
-
+    <h1>Alpine Linux 设置 samba windows局域网文件共享</h1>
     <p>安装软件包:</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line"># apk add samba</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
-
- 
+    <pre># apk add samba</pre>
     <p>创建需要共享的目录:</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line"># mkdir /mnt/sdb1</span><br><span class="line"># chmod 0777 /mnt/sdb1</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+# mkdir /mnt/sdb1
+# chmod 0777 /mnt/sdb1
+	</pre>
 
     <p>编辑配置文件 /etc/samba/smb.conf ，修改内容为：</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line">[global]</span><br><span class="line">   workgroup = WORKGROUP</span><br><span class="line">   netbios name = ALPINE</span><br><span class="line">   server string = Samba Server</span><br><span class="line">   max log size = 50</span><br><span class="line">   map to guest = Bad User</span><br><span class="line">   guest account = nobody</span><br><span class="line">   ;domain master = yes</span><br><span class="line">   ;local master = yes</span><br><span class="line">   ;preferred master = yes</span><br><span class="line">   ;os level = 512</span><br><span class="line">   ;wins support = yes</span><br><span class="line"></span><br><span class="line">[share]</span><br><span class="line">   comment = share</span><br><span class="line">   path = /mnt/sdb1</span><br><span class="line">   public = yes</span><br><span class="line">   writable = yes</span><br><span class="line">   printable = no</span><br><span class="line">   create mask = 0765</span><br><span class="line">   directory mask = 755</span><br><span class="line">   browsable = yes</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+[global]
+   workgroup = WORKGROUP
+   netbios name = ALPINE
+   server string = Samba Server
+   max log size = 50
+   map to guest = Bad User
+   guest account = nobody
+   ;domain master = yes
+   ;local master = yes
+   ;preferred master = yes
+   ;os level = 512
+   ;wins support = yes
+
+[share]
+   comment = share
+   path = /mnt/sdb1
+   public = yes
+   writable = yes
+   printable = no
+   create mask = 0765
+   directory mask = 755
+   browsable = yes
+	</pre>
 
     <p>配置系统服务</p>
-    <figure class="highlight plain">
-      <table>
-        <tr>
-          <td class="gutter">
-            <pre><span class="line">1</span><br><span class="line">2</span><br></pre>
-          </td>
-          <td class="code">
-            <pre><span class="line"># rc-update add samba</span><br><span class="line"># rc-service samba start</span><br></pre>
-          </td>
-        </tr>
-      </table>
-    </figure>
+
+    <pre>
+# rc-update add samba
+# rc-service samba start	
+	</pre>
 
     <p>然后在windows系统打开网上邻居，或者文件管理器地址栏直接输入 \ALPINE 就能访问共享了</p>
-
   </div>
 </body>
 

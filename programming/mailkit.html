@@ -12,18 +12,14 @@
   <div class="container">
 
 
-    <h1>
-      阿里云海外服务器禁用25端口发邮件的解决方法
-    </h1>
-
-
+    <h1>阿里云海外服务器禁用25端口发邮件的解决方法</h1>
 
     <p>使用阿里云香港服务器时发现发邮件失败，检查发现阿里云香港服务器禁用了25端口</p>
     <p>解决方法是使用其它端口，例如465 ，使用ssl加密</p>
     <a id="more"></a>
     <p>尝试发送邮件代码改为：</p>
-    <code>
-      <pre>
+
+    <pre>
 using(var client = new SmtpClient())
 {
 	client.EnableSsl = true;
@@ -32,13 +28,13 @@ using(var client = new SmtpClient())
        client.Send(msg);
 }
       </pre>
-    </code>
-    
+
+
     <p>这样还是不行，报操作已超时错误，经查询，System.Net.Mail支持Explicit SSL但是不支持Implicit SSL<br>尝试改用System.Web.Mail ,提示 “类库已过时”。</p>
     <p>最终使用MailKit 类库解决问题：</p>
     <p>安装nuget 包</p>
-    <code>
-      <pre>
+
+    <pre>
 PM>Install-Package MailKit -Version 2.2.0
 
 using System;
@@ -76,8 +72,8 @@ namespace MyWebApp
      }
 }
       </pre>
-    </code>
-     
+
+
   </div>
 </body>
 

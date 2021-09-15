@@ -9,13 +9,11 @@
 </head>
 
 <body>
-  <h1>
-    用reagentc命令设置系统还原功能
-  </h1>
+  <div class="container">
 
 
-  <code>
- <pre>
+    <h1>用reagentc命令设置系统还原功能</h1>
+    <pre>
 attrib -r -s -h C:\Recovery\WindowsRE\boot.sdi
 attrib -r -s -h C:\Recovery\WindowsRE\Winre.wim
 md D:\Recovery\WindowsRE
@@ -27,12 +25,8 @@ reagentc /setreimage /path D:\Recovery\WindowsRE
 reagentc /setosimage /path D:\Recovery\WindowsRE /index 3
 reagentc /enable
  </pre>
- </code>
-
-
-  <p>配置 Windows 恢复环境(Windows RE)和系统初始化。<br>REAGENTC.EXE<br>可以指定以下命令:</p>
-  <code>
-<pre>
+    <p>配置 Windows 恢复环境(Windows RE)和系统初始化。<br>REAGENTC.EXE<br>可以指定以下命令:</p>
+    <pre>
 /info             - 显示 Windows RE 和系统初始化配置信息。
 /setreimage       - 设置自定义 Windows RE 映像的位置。
 /enable           - 启用 Windows RE。
@@ -41,23 +35,19 @@ reagentc /enable
 /setosimage       - 设置系统初始化所用的恢复映像的位置。
 /setbootshelllink - 在启动菜单的“初始化和还原”页中添加条目。
  </pre>
- </code>
-
-  <p>有关这些命令及其参数的详细信息，请键入<br>REAGENTC.EXE /?。<br>示例:<br>REAGENTC.EXE /setreimage /?<br>REAGENTC.EXE /disable /?</p>
-  <p>备份系统：</p>
-  <code>
-<pre>
+    <p>有关这些命令及其参数的详细信息，请键入<br>REAGENTC.EXE /?。<br>示例:<br>REAGENTC.EXE /setreimage /?<br>REAGENTC.EXE /disable /?</p>
+    <p>备份系统：</p>
+    <pre>
 recimg /createimage C:\   得到映像C:\CustomRefresh.wim
 copy CustomRefresh.wim D:\Recovery\WindowsRE\install.wim
 reagentc /setreimage /path E:\WIM /index "1"
 recimg /setcurrent C:\
 recimg /createimage C:\可以进行增量备份，只需改变/index
  </pre>
- </code>
-
 
 
   </div>
+  
 </body>
 
 </html>

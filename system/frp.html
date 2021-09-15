@@ -12,9 +12,7 @@
   <div class="container">
 
 
-    <h1>
-      内网穿透工具--FRP
-    </h1>
+    <h1>内网穿透工具--FRP</h1>
 
 
 
@@ -23,18 +21,18 @@
     <p>FRP 下载地址：<a href="https://github.com/fatedier/frp/releases" target="_blank"
         rel="noopener">https://github.com/fatedier/frp/releases</a></p>
     <h2 id="linux-服务端安装"><a href="#linux-服务端安装" class="headerlink" title="linux 服务端安装:"></a>linux 服务端安装:</h2>
-    <code>
-      <pre>
+
+    <pre>
 wget https://github.com/fatedier/frp/releases/download/v0.29.0/frp_0.29.0_linux_386.tar.gz
 tar xzvf frp_0.29.0_linux_386.tar.gz
 mv frp_0.29.0_linux_386 frp
       </pre>
-    </code>
- 
+
+
 
     <h2 id="linux-服务端配置"><a href="#linux-服务端配置" class="headerlink" title="linux 服务端配置:"></a>linux 服务端配置:</h2>
-    <code>
-      <pre>
+
+    <pre>
 $ cat frps.ini
 
 [common]
@@ -46,25 +44,25 @@ vhost_http_port = 8080
 #启动 FRP 服务端
 $ ./frps -c ./frps.ini
       </pre>
-    </code>
-     
+
+
 
     <p>通过上面简单的两步就可以成功启动一个监听在 7000 端口的 FRP 服务端。</p>
     <h2 id="添加开机启动等服务"><a href="#添加开机启动等服务" class="headerlink" title="添加开机启动等服务"></a>添加开机启动等服务</h2>
-    <code>
-      <pre>
+
+    <pre>
 首先先新建一个 写有命令的可执行文件
 vi /usr/local/frp/start_frp
 nohup /usr/local/frp/frps -c /usr/local/frp/frps.ini >/usr/local/frp/log.txt 2>&1 &
 给此文件添加执行权限
 chmod +x /usr/local/frp/start_frp
       </pre>
-    </code>
-     
+
+
 
     <p>创建Frp执行脚本。<br>vi /etc/init.d/frp</p>
-    <code>
-      <pre>
+
+    <pre>
 #!/bin/bash
 #
 # frp startup script for the server
@@ -98,14 +96,14 @@ case "$1" in
 esac
 exit 0
       </pre>
-    </code>
-     
+
+
 
     <p>修改文件为可运行文件： chmod a+x /etc/init.d/frp<br>查看frp开机启动情况： chkconfig –list<br>添加到系统启动队列中： chkconfig –add frp<br>启动服务:
       service frp start</p>
     <h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置:"></a>客户端配置:</h2>
-    <code>
-      <pre>
+
+    <pre>
 $ vim frpc.ini
 
 [common]
@@ -132,8 +130,8 @@ custom_domains = wannabe.fun
 启动 FRP 客户端
 $ ./frpc -c ./frpc.ini
       </pre>
-    </code>
-    
+
+
 
   </div>
 </body>
