@@ -17,7 +17,29 @@
             "title": "未分类"
         }
     ],
-    "posts": [{
+    "posts": [
+	{
+	    "title": "跳过升级，直接全新安装激活windows 10",
+            "permalink": "skipupdateinstallwindows10",
+            "date": "2019-09-15 15:14:10",
+            "categories": "系统维护",
+            "tags": []	
+	},
+	{
+	    "title": "Unicode 特殊字符表",
+            "permalink": "unicodes",
+            "date": "2019-09-02 17:31:10",
+            "categories": "开发",
+            "tags": []	
+	},
+	{
+            "title": "【公司资料】润新礼品",
+            "permalink": "redpod",
+            "date": "2019-09-15 13:18:20",
+            "categories": "未分类",
+            "tags": []
+        },
+	{
             "title": "打地鼠",
             "permalink": "gophers",
             "date": "2019-09-07 15:24:20",
