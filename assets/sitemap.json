@@ -1,5 +1,6 @@
 {
-    "categories": [{
+    "categories": [
+        {
             "permalink": "programming",
             "title": "开发"
         },
@@ -120,7 +121,7 @@
         {
             "title": "Grub4Dos开票机系统选择菜单",
             "permalink": "grub4dosmenu",
-            "date": "2018-4-18 11:01:08",
+            "date": "2018-04-18 11:01:08",
             "categories": "系统维护",
             "tags": []
         },

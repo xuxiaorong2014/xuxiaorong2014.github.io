@@ -1,5 +1,6 @@
 import './jquery-3.6.0.min.js';
-import Vue from './vue.esm.browser.js';
+import './site.js';
+import Vue from './vue.esm.browser.min.js';
 
 var app = new Vue({
     el: '#app',
