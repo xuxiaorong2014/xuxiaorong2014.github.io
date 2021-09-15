@@ -9,11 +9,29 @@
             "title": "系统维护"
         },
         {
+            "permalink": "game",
+            "title": "游戏"
+        },
+        {
             "permalink": "uncategorized",
             "title": "未分类"
         }
     ],
     "posts": [{
+            "title": "打地鼠",
+            "permalink": "gophers",
+            "date": "2019-09-07 15:24:20",
+            "categories": "游戏",
+            "tags": []
+        },
+	{
+            "title": "迷宫",
+            "permalink": "canvas-maze",
+            "date": "2019-09-09 15:29:25",
+            "categories": "游戏",
+            "tags": []
+        },
+	{
             "title": "内网穿透工具--FRP",
             "permalink": "frp",
             "date": "2019-10-15 23:20:20",

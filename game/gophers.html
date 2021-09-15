@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>打地鼠</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+		body{margin:0;color:#66aa00;background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAT0lEQVQYGQFEALv/AERzFf8SQgD/Wosg/5vNXv8AKFQA/y5bAP+EtEf/dKQ2/wB0okD/U4Ic/1KCFP9QgBL/AJrLVf9snSj/RXUF/3usOf8oFSDJ49e84gAAAABJRU5ErkJggg==);}
+		h1{text-align:center;color:#fff;  }
+		.container{  margin-left:auto; margin-right:auto; max-width:500px; padding:50px; }
+		.row{clear:left;padding-top:40px}
+		.col{ float:left;width:25%;text-align:center}
+		.hole{border-radius: 50%;
+			width: 80%;
+			height: 60px;  
+			margin-left:auto;
+			margin-right:auto; 
+			background:#222222;
+			border:solid 8px #118800;
+			box-shadow: 10px 10px 5px #666666 inset;
+			overflow: hidden;	
+		}
+		.hide .gophers{margin-top:200px;}
+		.gophers{width:80%;transition:0.5s; margin-top:-1px}
+		#mask{position:fixed; z-index:100;top:0;left:0;right:0;bottom:0;}
+		#mask .dialog{background:#66aa00;height:100%;text-align:center;margin-top:80px;padding-top:40px;}
+		#mask .dialog button{font-size:32px;color:#ffff00;margin-top:100px;background:#66aa00;padding:20px}
+		#msg{color:#fff}
+		
+    </style>
+</head>
+<body>
+	<h1>打地鼠</h1>
+	<div style="max-width:600px;margin-left:auto;margin-right:auto">
+		<div style="float:left;width:45%;color:#ffff00;font-size:32px;font-weight:bold">得分: <span id="score-box">0</span></div>
+		<div style="float:right;width:45%;text-align:right;color:#ffff00;font-size:32px;font-weight:bold">剩余时间: <span id="time-box">60</span></div>
+	</div>
+	<div class="container" id="main"> </div>
+	<div id="mask" class="show">
+		<div class="dialog">
+			<p id="msg"></p>
+			<button onclick="start()">开始游戏</button>
+		</div>
+	</div>
+	<div>
+	
+	</div>
+	<script type="text/x-template" id="svg">
+	<svg version="1.1" class="gophers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.75 331.62" >
+<style type="text/css">
+  .st0{fill:#EB6100;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}/*耳朵和脸*/
+  .st1{fill:#FFFFFF;}/*眼白*/
+  .st3{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}/*牙齿*/
+  .st4{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;} /*牙缝和胡须*/
+</style>
+<ellipse class="st0" cx="44.94" cy="40.75" rx="26.44" ry="22.26"/> <!--左耳-->
+<ellipse class="st0" cx="195.81" cy="42.61" rx="26.44" ry="22.26"/> <!--右耳-->
+<ellipse class="st0" cx="120.38" cy="165.81" rx="89.76" ry="159.31"/> <!--脸-->
+<circle class="st1" cx="92.36" cy="100.26" r="21.08"/> <!--左眼白-->
+<circle cx="92.78" cy="96.67" r="9.61"/><!--左眼黑-->
+<circle class="st1" cx="148.39" cy="100.26" r="21.08"/> <!--右眼白-->
+<circle cx="148.59" cy="96.05" r="10.23"/><!--右眼黑-->
+<rect x="86.01" y="94.39" class="st1" width="3.33" height="3.33"/><!--左眼神光-->
+<rect x="141.75" y="94.87" class="st1" width="3.33" height="3.33"/><!--右眼神光-->
+<ellipse cx="112.46" cy="123.67" rx="9.91" ry="6.13"/> <!--左鼻孔-->
+<ellipse cx="127.71" cy="123.67" rx="9.91" ry="6.13"/> <!--右鼻孔-->
+<path class="st3" d="M132.69,222.49h-24.76l-8.52-74.23c0,0,13.45-6.79,20.97-20.01c8.05,13.99,21.37,20.22,21.37,20.22
+ L132.69,222.49z"/>  <!--大板牙-->
+<line class="st4" x1="120.38" y1="128.25" x2="120.38" y2="222.49"/> <!--牙缝-->
+<path class="st4" d="M120.38,128.25c0,0-17.44,32.74-58.92,25.36"/> <!--左胡须-->
+<path class="st4" d="M120.38,128.25c0,0,17.44,32.74,58.92,25.36"/> <!--右胡须-->
+</svg>
+	</script>
+	<script>
+		var svgData= document.getElementById('svg').innerHTML;
+		var timeBox = document.getElementById('time-box');
+		var scoreBox = document.getElementById('score-box');
+		var beginTime=0;
+		var score = 0;
+		var holes = [];
+
+ 
+
+		for(var j = 0;j< 3;j++){
+			var row=[];
+			var divRow = document.createElement('div');
+			divRow.className='row';
+			for(var i=0;i<4;i++){
+				var divCol = document.createElement('div');
+				divCol.className='col';
+				var hole =document.createElement('div');
+				hole.className='hole hide';
+				hole.innerHTML = svgData;
+				hole.onclick = function(){
+					if(!this.classList.contains('hide')){
+						score = score + 1;
+						scoreBox.innerText = score;
+						this.classList.add('hide');
+					}
+				};
+				row.push(hole);
+				divCol.appendChild(hole);
+				divRow.appendChild(divCol);
+			}
+			holes.push(row);
+			document.getElementById('main').appendChild(divRow)
+		}
+		
+		
+		var start = function(){
+			beginTime=30;
+			score = 0;
+			timeBox.innerText = beginTime;
+			scoreBox.innerText=score;
+			document.getElementById('mask').hidden=true;
+			var b = setInterval(function() {
+				var i = parseInt( Math.random() * 10) % 3;
+				var j = parseInt( Math.random() * 10) % 4;
+				if( holes[i][j].classList.contains('hide')){
+					holes[i][j].classList.remove('hide');
+				}
+				else{
+					holes[i][j].classList.add('hide');
+				}
+			}, 1000); 
+			var a = setInterval(function() {
+				beginTime = beginTime - 1;
+				if(beginTime < 1){
+					clearInterval(a);
+					clearInterval(b);
+					document.getElementById('msg').innerText='游戏结束，你的得分是 '+ score;
+					document.getElementById('mask').hidden=false;
+				}
+				timeBox.innerText = beginTime;
+			}, 1000);
+		}
+	</script>
+</body>
+</html>

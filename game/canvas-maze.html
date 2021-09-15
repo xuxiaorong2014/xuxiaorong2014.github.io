@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+		h1{text-align:center}
+		.canvas-container{width:800px; height:600px;margin-left:auto; margin-right:auto}
+		#canvas1{background:#000 ;width:800px; height:600px;}
+    </style>
+</head>
+<body>
+	<h1>游戏场景</h1>
+     <div class="canvas-container"><canvas id="canvas1"></canvas></div>
+	<script>
+	    
+		var 画布 = document.getElementById('canvas1');
+		画布.width=800;
+		画布.height=600;
+		var ctx=画布.getContext('2d');
+		var 地图=[
+		[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+		[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+		[1,0,1,0,0,0,0,0,0,0,1,0,0,0,0,1],
+		[1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1],
+		[1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1],
+		[1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1],
+		[1,0,0,1,0,1,1,1,1,0,0,1,0,1,0,1],
+		[1,0,0,1,0,0,0,0,0,1,1,0,0,0,0,1],
+		[1,0,0,1,0,0,0,0,0,0,0,0,1,1,1,1],
+		[1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1],
+		[1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1],
+		[1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1]
+		];
+		var drawBlock=function(x,y,color){
+			ctx.fillStyle = color ? '#AAAAAA':'#000000';
+			ctx.fillRect(x*50 + 1,y*50 + 1,48,48);
+		};
+		var 英雄={
+			x:4,
+			y:4,
+			color: '#ff0000',
+			move:function(a){
+				
+				if(this.x<16||this.y<12){
+					drawBlock(this.x,this.y,0);
+
+				}
+				
+				if(a==37){
+					//左
+					if(!地图[this.y][this.x-1]){
+						this.x--;
+					}
+				}
+				else if(a==38){
+					//上
+					if(!地图[this.y-1][this.x]){
+						this.y--;
+					}
+				}
+				else if(a==39){
+					//右
+					if(!地图[this.y][this.x+1]){
+						this.x++;
+					}
+				}
+				else if(a==40){
+					//下
+					if(!地图[this.y+1][this.x]){
+						this.y++;
+					}
+				}
+				
+				ctx.fillStyle=this.color;
+				ctx.fillRect(this.x*50+1,this.y*50+1,48,48);
+			}
+
+		};
+		
+		for(var i = 0; i< 地图.length;i++){
+			for(var j=0;j<地图[0].length;j++){
+				drawBlock(j,i,地图[i][j]);
+			}
+		}
+		英雄.move(39);
+		document.onkeydown = function(e) {
+			英雄.move(e.keyCode);
+			return false;
+		}
+	</script>
+</body>
+</html>
