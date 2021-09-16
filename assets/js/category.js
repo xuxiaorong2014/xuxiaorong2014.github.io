@@ -6,7 +6,7 @@ import VueRouter from './vue-router.esm.browser.min.js';
 Vue.use(VueRouter);
 
 const template = `
-<div>  
+<div v-cloak>  
   <h2>{{category.title}}</h2>
   <ul>
     <li v-for="post in category.posts">
@@ -38,6 +38,7 @@ const Category = {
             }).done(function (res) {
                 vm.category = res.categories.find(v => v.permalink == vm.$route.params.permalink);
                 vm.category.posts = res.posts.filter(a => a.categories == vm.category.title);
+				document.title=vm.category.title;
             });
         }
     }

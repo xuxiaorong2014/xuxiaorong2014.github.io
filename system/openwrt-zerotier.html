@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>openwrt官方固件使用zerotier的配置</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>openwrt官方固件使用zerotier的配置</h1>
+        <p>先到 <a href="https://my.zerotier.com/" target="_blank">https://my.zerotier.com</a>注册账号并创建网络获得网络ID</p>
+        <p>1.Openwrt 安装Zerotier</p>
+        <pre><code>
+opkg update
+opkg install zerotier
+</code>
+</pre>
+        <p>2.初始化Zerotier（<span
+                style="color:#ff0000">注意：执行初始化命令前，在zerotier官网管理页面不能有同一个局域网IP段的路由列表，否则会出现不能登陆路由器的问题</span>）</p>
+        <pre><code>
+mkdir -p /etc/zerotier
+uci set zerotier.openwrt_network=zerotier
+uci add_list zerotier.openwrt_network.join='你的网络ID'
+uci set zerotier.openwrt_network.enabled='1'
+uci set zerotier.openwrt_network.config_path='/etc/zerotier'
+uci commit zerotier
+</code>
+</pre>
+        <p> 3.启动zerotier </p>
+        <pre><code>
+/etc/init.d/zerotier enable
+/etc/init.d/zerotier start
+</code>
+</pre>
+        <p>
+            4.web界面，网络 -&gt; 接口，添加新接口 <br>
+            名称 ZeroTier <br>
+            协议选不配置协议， <br>
+            接口选z开头的适配器。<br>
+            创建/分配防火墙区域 lan <br>
+            保存&amp;应用
+        </p>
+        <p>
+            5.web界面，网络 -&gt; 防火墙-&gt; 通信规则，添加：<br>
+            名称 Allow-ZeroTier-Inbound<br>
+            协议 UDP <br>
+            源区域 任意区域<br>
+            目标区域 设备<br>
+            目标端口 9993<br>
+            保存&amp;应用
+        </p>
+        <p>6.重启路由</p>
+        <pre><code>
+reboot
+</code>
+</pre>
+        <p>到此，已经配置完成，到<a href="https://my.zerotier.com/" target="_blank">https://my.zerotier.com</a> 勾选新加入的设备，并添加路由（
+            <span style="color:#ff0000">注：如果是多个局域网互联，不能使用相同的局域网IP段</span>）
+        </p>
+        <p>
+            <span>++++++++++++++++++++++++++++++++++++++++++++++++++</span><br>
+            如果使用自建moon服务器，初始化Zerotier的命令略有差异
+        </p>
+        <pre><code>
+mkdir -p /etc/zerotier
+mkdir -p /etc/zerotier/moons.d
+uci set zerotier.openwrt_network=zerotier
+uci add_list zerotier.openwrt_network.join='你的网络ID'
+uci set zerotier.openwrt_network.enabled='1'
+uci set zerotier.openwrt_network.config_path='/etc/zerotier'
+uci commit zerotier
+</code>
+</pre>
+        <p>
+            然后将moon服务器将生成的0000000xxxx.moon复制到/etc/zerotier/moons.d<br>
+            或者<br>
+            直接使用命令添加<br>
+        </p>
+        <pre><code>
+zerotier-cli orbit Moon节点ID Moon节点ID
+</code>
+</pre>
+        <p>
+            这两个添加moon服务器的方法在moon的使用上无区别，看个人喜好。<br>
+            ++++++++++++++++++++++++++++++++++++++++++++++++++<br>
+            如果使用自建ztncui服务器，初始化Zerotier的命令略有差异<br>
+        </p>
+        <pre><code>
+mkdir -p /etc/zerotier
+uci set zerotier.openwrt_network=zerotier
+uci add_list zerotier.openwrt_network.join='你的ztncui服务器生成的网络ID'
+uci set zerotier.openwrt_network.enabled='1'
+uci set zerotier.openwrt_network.config_path='/etc/zerotier'
+uci commit zerotier
+</code>
+</pre>
+    </div>
+    <script type="module" src="/assets/js/page.js"></script>
+</body>
+
+</html>

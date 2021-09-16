@@ -2,31 +2,37 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<title>首页</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
-	<div class="container" id="app" v-cloak>
-		 <div v-for="category in categories">
-			<h2>{{category.title}}</h2>
-			<ul>
-				<li v-for="post in category.posts">
-					<a v-bind:href="'/' + category.permalink + '/' + post.permalink + '.html'">{{post.title}}</a> <small>{{post.date}}</small>
-				</li>
-			</ul>
-		 </div>
-		 <div>
-			 <h2>链接</h2>
-			 <ul>
-				 <li><a href="/pages/dotfont.html">javascript实现点阵文字效果</a></li>
-				 <li><a href="https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys" target="_blank" rel="noopener">KMS Client Setup Keys</a></li>
-			 </ul>
-		 </div>
-	</div>
-  <script type="module" src="/assets/js/home.js"></script>
+    <div class="container" id="app">
+        <div v-cloak>
+            <div v-for="category in categories">
+                <h2>{{category.title}}</h2>
+                <ul>
+                    <li v-for="post in category.posts">
+                        <a v-bind:href="'/' + category.permalink + '/' + post.permalink + '.html'">{{post.title}}</a>
+                        <small>{{post.date}}</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <h2>链接</h2>
+            <ul>
+                <li><a href="/pages/editor.html">网页编辑器</a></li>
+                <li><a href="/pages/dotfont.html">javascript实现点阵文字效果</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/windows-server/get-started/kmsclientkeys" target="_blank"
+                        rel="noopener">KMS Client Setup Keys</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="module" src="/assets/js/home.js"></script>
 </body>
 
 </html>
