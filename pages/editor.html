@@ -78,9 +78,10 @@
 		<h1>网页编辑器</h1>
 		<div class="form-group">
 			<button id="btn-save" class="btn btn-default" disabled>保存</button>
-			<button id="btn-show-code" class="btn btn-default">显示源码</button>
-			<button id="btn-show-html" class="btn btn-default" disabled>显示html</button>
-			<button id="btn-finish" class="btn btn-default">生成网页html</button>
+			<button id="btn-show-code" class="btn btn-default">源码</button>
+			<button id="btn-show-html" class="btn btn-default" disabled>编辑</button>
+			<button id="btn-review" class="btn btn-default">查看网页</button>
+			<button id="btn-finish" class="btn btn-default">生成Html</button>
 		</div>
 		<div class="form-group">
 			<label for="title">标题：</label>
@@ -100,13 +101,12 @@
 		var btn_save = document.getElementById('btn-save');
 		var btn_show_code = document.getElementById('btn-show-code');
 		var btn_show_html = document.getElementById('btn-show-html');
-		var btn_finish = document.getElementById('btn-finish');
 		var input_title = document.getElementById('title');
 		var input_editor = document.getElementById('editor');
 		var input_code = document.getElementById('input-code');
-		if(typeof(localStorage['backup_body']) != 'undefined'){
-			input_title.value=localStorage['backup_title'];
-			input_editor.innerHTML=localStorage['backup_body'];
+		if (typeof (localStorage['backup_body']) != 'undefined') {
+			input_title.value = localStorage['backup_title'];
+			input_editor.innerHTML = localStorage['backup_body'];
 		}
 		var editting = 'html';
 		var toggleInput = function () {
@@ -117,14 +117,20 @@
 				input_code.value = input_editor.innerHTML;
 			}
 		}
-		input_editor.addEventListener('keyup',function(){
-			btn_save.disabled=false;
+		input_title.addEventListener('keyup', function () {
+			btn_save.disabled = false;
 		});
-		btn_save.addEventListener('click',function(){
+		input_editor.addEventListener('keyup', function () {
+			btn_save.disabled = false;
+		});
+		input_code.addEventListener('keyup', function () {
+			btn_save.disabled = false;
+		});
+		btn_save.addEventListener('click', function () {
 			toggleInput();
 			localStorage['backup_title'] = input_title.value;
 			localStorage['backup_body'] = input_editor.innerHTML;
-			btn_save.disabled=true;
+			btn_save.disabled = true;
 		});
 		btn_show_code.addEventListener('click', function () {
 			btn_show_code.disabled = true;
@@ -142,7 +148,7 @@
 			input_editor.hidden = false;
 			input_code.style.display = 'none';
 		});
-		btn_finish.addEventListener('click', function () {
+		document.getElementById('btn-finish').addEventListener('click', function () {
 			toggleInput();
 			var template = `<!DOCTYPE html>
 <html>
@@ -161,6 +167,20 @@ ${input_editor.innerHTML}
 </body>
 </html>`;
 			document.body.innerText = template;
+			localStorage['backup_title'] = input_title.value;
+			localStorage['backup_body'] = input_editor.innerHTML;
+		});
+		document.getElementById('btn-review').addEventListener('click', function () {
+			toggleInput();
+			document.head.innerHTML = `<meta charset="utf-8">
+			<title>${title.value}</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="/assets/css/style.css">`;
+			document.body.innerHTML = `<div class="container">
+				<h1>${title.value}</h1>
+				${input_editor.innerHTML}
+			</div>
+			<script type="module" src="/assets/js/page.js"><\/script>`;
 			localStorage['backup_title'] = input_title.value;
 			localStorage['backup_body'] = input_editor.innerHTML;
 		});
