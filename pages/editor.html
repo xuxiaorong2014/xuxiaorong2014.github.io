@@ -172,17 +172,19 @@ ${input_editor.innerHTML}
 		});
 		document.getElementById('btn-review').addEventListener('click', function () {
 			toggleInput();
-			document.head.innerHTML = `<meta charset="utf-8">
-			<title>${title.value}</title>
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<link rel="stylesheet" href="/assets/css/style.css">`;
-			document.body.innerHTML = `<div class="container">
-				<h1>${title.value}</h1>
-				${input_editor.innerHTML}
-			</div>
-			<script type="module" src="/assets/js/page.js"><\/script>`;
+			document.head.innerHTML = `<meta charset="utf-8"><title>${title.value}</title><meta name="viewport" content="width=device-width, initial-scale=1">`;
+			document.body.innerHTML = `<div class="container"><h1>${title.value}</h1>${input_editor.innerHTML}</div>`;
 			localStorage['backup_title'] = input_title.value;
 			localStorage['backup_body'] = input_editor.innerHTML;
+		});
+		window.isCloseHint = true;
+		window.addEventListener("beforeunload", function(e) {
+			window.isCloseHint = !btn_save.disabled;
+			if (window.isCloseHint) {
+				var confirmationMessage = "要记得保存！你确定要离开我吗？";
+				(e || window.event).returnValue = confirmationMessage; // 兼容 Gecko + IE
+				return confirmationMessage; // 兼容 Gecko + Webkit, Safari, Chrome
+			}
 		});
 	</script>
 </body>
