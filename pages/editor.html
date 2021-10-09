@@ -82,6 +82,7 @@
 			<button id="btn-show-html" class="btn btn-default" disabled>HTML编辑</button>
 			<button id="btn-review" class="btn btn-default">查看网页</button>
 			<button id="btn-finish" class="btn btn-default">生成Html</button>
+			<button id="btn-upload" class="btn btn-default">插入附件</button>
 		</div>
 		<div class="form-group">
 			<label for="title">标题：</label>
@@ -147,6 +148,51 @@
 			editting = 'html';
 			input_editor.hidden = false;
 			input_code.style.display = 'none';
+		});
+
+
+		function resizeImage(image) {
+			console.log(image)
+		  var canvas = document.createElement('canvas');
+		  var ctx = canvas.getContext('2d');
+		  canvas.width = 1200;
+		  canvas.height = 1200;
+		  ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+		  input_editor.appendChild(canvas);
+		  //ctx.scale(0.2,0.2);
+		  return canvas.toDataURL('image/jpeg',0.8);
+
+		}
+		 
+		document.getElementById('btn-upload').addEventListener('click',function(){
+			var f = document.createElement('input');
+			f.type='file';
+			f.style.display='none';
+			f.addEventListener('change',function(){
+				var fileObj = f.files[0];
+				console.log(fileObj);
+				var reader = new FileReader();
+				reader.readAsDataURL(fileObj);
+				reader.onload = function(e){
+					if(!/image\/\w+/.test(fileObj.type)) {
+						var downloadlink = document.createElement('a');
+						downloadlink.href=this.result;
+						downloadlink.download=fileObj.name;
+						downloadlink.innerText = '下载附件 '+ fileObj.name;
+						input_editor.appendChild(downloadlink); 
+					}
+					else{
+						var img = new Image();
+						img.src=this.result;
+						img.alt=fileObj.name;
+						input_editor.appendChild(img);
+						 
+					}
+				}
+				f.remove();
+			});
+			document.body.appendChild(f);
+			f.click();
 		});
 		document.getElementById('btn-finish').addEventListener('click', function () {
 			toggleInput();
