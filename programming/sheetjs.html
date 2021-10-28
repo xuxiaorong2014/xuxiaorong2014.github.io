@@ -10,8 +10,9 @@
 	<div class="container">
 		<h1>JS处理Excel简单示例</h1>
 		<input type="file" id="file1" multiple>
-		<div id="table1">
+		<div>
 			<div id="download-links"></div>
+			<table id="table1" border="1"></table>
 		</div>
 	</div>
 
@@ -23,17 +24,16 @@
             reader.onload = function (e) {
                 var data = e.target.result;
                 var workbook = XLSX.read(data, { type: 'binary' });
-				
                 var worksheet = workbook.Sheets[workbook.SheetNames[0]];
-				console.log(worksheet)
-				var sheetData = XLSX.utils.sheet_to_json(worksheet);
-				
-
-				var t = document.createElement('div');
-				t.innerText = JSON.stringify(sheetData);
-				table1.append(t)
-
+ 
+				XLSX.utils.sheet_to_csv(worksheet).replaceAll(',','</td><td>').split('\n').forEach(function(c){
+					var tr = document.createElement('tr');
+					tr.innerHTML= '<td>' + c + '</td>';
+					console.log(c)
+					table1.append(tr);
+				});
 				//导出
+				var sheetData = XLSX.utils.sheet_to_json(worksheet);
 				var workBook1 = {SheetNames: ['Sheet1'],Sheets: {},Props: {}};
 				workBook1.Sheets['Sheet1'] = XLSX.utils.json_to_sheet(sheetData);
 				//XLSX.writeFile(workBook1,'download.xlsx');
