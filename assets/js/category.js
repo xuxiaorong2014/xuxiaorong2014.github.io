@@ -1,10 +1,7 @@
-import './jquery-3.6.0.min.js';
 import './site.js';
 import Vue from './vue.esm.browser.min.js';
 import VueRouter from './vue-router.esm.browser.min.js';
-
 Vue.use(VueRouter);
-
 const template = `
 <div v-cloak>  
   <h2>{{category.title}}</h2>
@@ -15,7 +12,6 @@ const template = `
   </ul>
 </div>
 `;
-
 const Category = {
     template: template,
     data: function () {
@@ -32,28 +28,24 @@ const Category = {
     methods: {
         load: function () {
             var vm = this;
-            $.ajax({
-                url: '/assets/sitemap.json',
-                type: 'get'
-            }).done(function (res) {
-                vm.category = res.categories.find(v => v.permalink == vm.$route.params.permalink);
-                vm.category.posts = res.posts.filter(a => a.categories == vm.category.title);
+			fetch('/assets/sitemap.json',{
+				method:'get'
+			}).then(function(response){
+				return response.json();
+			}).then(function(res){
+				vm.category = res.categories.find(v => v.permalink == vm.$route.params.permalink);
+				vm.category.posts = res.posts.filter(a => a.categories == vm.category.title);
 				document.title=vm.category.title;
-            });
+			});
         }
     }
-
 };
-
 const router = new VueRouter({
     routes: [
         { path: '/:permalink', component: Category }
     ]
 });
-
 var app = new Vue({
     el: '#app',
     router: router
 });
-
-
