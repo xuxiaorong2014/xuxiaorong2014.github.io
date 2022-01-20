@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ExcelJS 读取，操作并写入电子表格数据和样式到 XLSX 和 JSON 文件。</title>
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1><a href="https://github.com/exceljs/exceljs/blob/HEAD/README_zh.md">ExcelJS</a> 读取，操作并写入电子表格数据和样式到 XLSX 和 JSON 文件。</h1>
+		<input type="file" id="file">
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/exceljs@4.3.0/dist/exceljs.min.js"></script>
+	<script>
+		var readFile = function(event){
+			var data = event.target.result;
+			workbook = new ExcelJS.Workbook;
+			workbook.xlsx.load(data).then(function(book){
+				var worksheet = book.worksheets[0];
+				var table = document.createElement('table');
+				table.border="1";
+				for(var i =1;i<worksheet.rowCount;i++){
+					var tr = document.createElement('tr');
+					for(var j=1;j<worksheet.columnCount;j++){
+						var td = document.createElement('td');
+						td.innerText = worksheet.getRow(i).getCell(j).value;
+						tr.append(td);
+					}
+					table.append(tr);
+				}
+				document.body.append(table);
+			});
+		}
+		document.getElementById('file').addEventListener('change', function () {
+			var inputFile = this;
+			var reader = new FileReader();
+			reader.onload = readFile;
+			reader.readAsBinaryString(inputFile.files[0]);
+		});
+	</script>
+	<script type="module" src="/assets/js/page.js"></script>
+</body>
+</html>
