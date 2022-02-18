@@ -17,23 +17,29 @@
 			var data = event.target.result;
 			workbook = new ExcelJS.Workbook;
 			workbook.xlsx.load(data).then(function(book){
-				var worksheet = book.worksheets[0];
-				var table = document.createElement('table');
-				table.border="1";
-				for(var i =1;i<worksheet.rowCount;i++){
-					var tr = document.createElement('tr');
-					for(var j=1;j<worksheet.columnCount;j++){
-						var td = document.createElement('td');
-						td.innerText = worksheet.getRow(i).getCell(j).value;
-						tr.append(td);
+				workbook.eachSheet(function(worksheet, sheetId) {
+					var h2 =  document.createElement('h2');
+					h2.innerText = worksheet.name
+					var table = document.createElement('table');
+					table.id='sheet-' + sheetId;
+					table.border="1";
+					for(var i =1;i<worksheet.rowCount;i++){
+						var tr = document.createElement('tr');
+						for(var j=1;j<worksheet.columnCount;j++){
+							var td = document.createElement('td');
+							td.innerText = worksheet.getRow(i).getCell(j).value;
+							tr.append(td);
+						}
+						table.append(tr);
 					}
-					table.append(tr);
-				}
-				document.body.append(table);
+					document.body.append(h2);
+					document.body.append(table);
+				});
 			});
 		}
 		document.getElementById('file').addEventListener('change', function () {
 			var inputFile = this;
+			inputFile.hidden=true;
 			var reader = new FileReader();
 			reader.onload = readFile;
 			reader.readAsBinaryString(inputFile.files[0]);
