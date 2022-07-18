@@ -1,4 +1,5 @@
-define(['vue.min','vue-router.min','site'],function(Vue,VueRouter){
+require.config({paths: {jquery: 'jquery-1.12.4.min'}});
+require(['jquery','vue.min','vue-router.min','site'],function($,Vue,VueRouter){
 	Vue.use(VueRouter);
 	const template = `
 	<div v-cloak>  
@@ -26,11 +27,7 @@ define(['vue.min','vue-router.min','site'],function(Vue,VueRouter){
 		methods: {
 			load: function () {
 				var vm = this;
-				fetch('/assets/sitemap.json',{
-					method:'get'
-				}).then(function(response){
-					return response.json();
-				}).then(function(res){
+				$.ajax('/assets/sitemap.json').done(function(res){
 					vm.category = res.categories.find(v => v.permalink == vm.$route.params.permalink);
 					vm.category.posts = res.posts.filter(a => a.categories == vm.category.title);
 					document.title=vm.category.title;

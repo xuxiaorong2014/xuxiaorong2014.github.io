@@ -1,4 +1,5 @@
-define(['vue.min','site'],function(Vue){
+require.config({paths: {jquery: 'jquery-1.12.4.min'}});
+require(['jquery','vue.min','site'],function($,Vue){
 	var app = new Vue({
 		el: '#app',
 		data: {
@@ -6,15 +7,13 @@ define(['vue.min','site'],function(Vue){
 		},
 		created: function () {
 			var vm = this;
-			fetch('/assets/sitemap.json',{
-				method:'get'
-			}).then(function(response){
-				return response.json();
-			}).then(function(res){
-			vm.categories = res.categories;
+			$.ajax('/assets/sitemap.json').done(function(res){
+				vm.categories = res.categories;
 				res.categories.forEach(function(category){
-					category.posts = res.posts.filter(a=>a.categories==category.title);
-				});
+					category.posts = res.posts.filter(function(a){
+						return a.categories==category.title
+					});
+				});	
 			});
 		}
 	});
