@@ -19,6 +19,13 @@
     ],
     "posts": [
 	{
+            "title":"从Layui里提取的图标",
+	    "permalink": "font-icon",
+	    "date": "2022-01-20 13:07:00",
+	    "categories": "开发",
+	    "tags": []
+	},
+	{
             "title":"ExcelJS 读取Excel电子表格数据",
 	    "permalink": "exceljs",
 	    "date": "2022-01-20 13:07:00",
