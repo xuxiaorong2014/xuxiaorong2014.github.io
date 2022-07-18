@@ -1,18 +1,16 @@
 require.config({paths: {jquery: 'jquery-1.12.4.min'}});
 require(['jquery','vue.min','vue-router.min','site'],function($,Vue,VueRouter){
 	Vue.use(VueRouter);
-	const template = `
-	<div v-cloak>  
-	  <h2>{{category.title}}</h2>
-	  <ul>
-		<li v-for="post in category.posts">
-		  <a v-bind:href="'/' + category.permalink + '/' + post.permalink + '.html'">{{post.title}}</a> <small>{{post.date}}</small>
-		</li>
-	  </ul>
-	</div>
-	`;
+	const template = ['<div v-cloak><h2>{{category.title}}</h2>'];
+	template.push('<ul>');
+	template.push('<li v-for="post in category.posts">');
+	template.push('<a v-bind:href="\'/\' + category.permalink + \'/\' + post.permalink + \'.html\'">{{post.title}}</a>');
+	template.push('<small>{{post.date}}</small>');
+	template.push('</li>');
+	template.push('</ul>');
+	template.push('</div>');
 	const Category = {
-		template: template,
+		template: template.join(''),
 		data: function () {
 			return { category: {} }
 		},
@@ -20,7 +18,7 @@ require(['jquery','vue.min','vue-router.min','site'],function($,Vue,VueRouter){
 			this.load();
 		},
 		watch: {
-			$route(to, from) {
+			$route:function(to, from) {
 				this.load();
 			}
 		},
@@ -28,8 +26,13 @@ require(['jquery','vue.min','vue-router.min','site'],function($,Vue,VueRouter){
 			load: function () {
 				var vm = this;
 				$.ajax('/assets/sitemap.json').done(function(res){
-					vm.category = res.categories.find(v => v.permalink == vm.$route.params.permalink);
-					vm.category.posts = res.posts.filter(a => a.categories == vm.category.title);
+					//vm.category = 
+					res.categories.forEach(function(v){
+						if(v.permalink == vm.$route.params.permalink){
+							vm.category = v;
+						}
+					});
+					vm.category.posts = res.posts.filter(function(a){return a.categories == vm.category.title});
 					document.title=vm.category.title;
 				});
 			}

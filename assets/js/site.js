@@ -9,9 +9,20 @@ header.innerHTML='<div class="container" style="padding:0">\
     <li><a href="/category.html#/uncategorized">未分类</a></li>\
     </ul>\
   </div>';
-document.body.prepend(header);
+//document.body.prepend(header);
+
+//el.insertBefore(header,el.firstChild);
+//el.insertAdjacentHTML('afterBegin', 'html');
+
+var container = document.getElementsByClassName('container')[0];
+
+document.body.insertBefore(header,container);
+
+
 var footer=document.createElement('div');
 footer.style.textAlign = 'center';
 footer.innerHTML = '<p>谢谢</p>';
-var c = document.querySelectorAll('.container'); 
-c[c.length-1].after(footer); 
+ 
+document.body.insertAdjacentElement("beforeEnd", footer);
+
+//c[c.length-1].after(footer); 
