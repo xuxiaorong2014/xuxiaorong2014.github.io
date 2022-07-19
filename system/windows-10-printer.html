@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>win10修改注册表打开共享打印机</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>win10修改注册表打开共享打印机</h1>
+	<p>
+		win10更新后局域网电脑无法共享打印机<br />
+		卸载对应的补丁并不能解决根本问题。<br />
+		打开电脑：
+	</p>
+	<ol>
+		<li>同时按住“win+R”调出运行窗口。</li>
+		<li>在运行窗口输入“regedit”并点确定调出注册表编辑器。</li>
+		<li>找到一下路径“HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print”，空白处单击右键，点击新建值“DWORD（32位）值（D）”。</li>
+		<li>给该新建值重命名为“RpcAuthnLevelPrivacyEnabled”。</li>
+		<li>重命名之后选择值“RpcAuthnLevelPrivacyEnabled”，单击右键>修改>键入数值“0”>确定。</li>
+		<li>重启电脑即可。</li>
+     </ol>
+  </div>
+  <script src="/assets/js/page.js"></script>
+</body>
+
+</html>

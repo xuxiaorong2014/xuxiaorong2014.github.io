@@ -19,9 +19,16 @@
     ],
     "posts": [
 	{
+            "title":"win10修改注册表打开共享打印机",
+	    "permalink": "windows-10-printer",
+	    "date": "2022-07-19 12:39:00",
+	    "categories": "系统维护",
+	    "tags": []
+	},
+	{
             "title":"从Layui里提取的图标",
 	    "permalink": "font-icon",
-	    "date": "2022-01-20 13:07:00",
+	    "date": "2022-07-18 14:22:00",
 	    "categories": "开发",
 	    "tags": []
 	},
