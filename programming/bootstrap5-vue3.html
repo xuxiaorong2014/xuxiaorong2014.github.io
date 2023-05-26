@@ -22,9 +22,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-			<li><a href="/#/system">系统维护</a></li>
-			<li><a href="/#/programming">开发</a></li>
-			<li><a href="/#/uncategorized">未分类</a></li>
+			<li class="nav-item"><a class="nav-link" href="/#/system">系统维护</a></li>
+			<li class="nav-item"><a class="nav-link" href="/#/programming">开发</a></li>
+			<li class="nav-item"><a class="nav-link" href="/#/uncategorized">未分类</a></li>
             <li class="nav-item" v-for="route in routes" >
               <router-link class="nav-link" v-bind:to="{path:route.path}">{{route.meta.title}}</router-link>
             </li>
