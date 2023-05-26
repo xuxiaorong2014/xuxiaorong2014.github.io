@@ -45,9 +45,11 @@ $(function(){
 		}
 		
 		if(c == 'home'){
+			$('#links').show();
 			renderHome();
 		}
 		else{
+			$('#links').hide();
 			var result = '<div>404 not found</div>';
 			for(var i in sitemap.categories){
 				if(sitemap.categories[i].permalink == c){
