@@ -9,19 +9,9 @@
 </head>
 
 <body>
-    <div class="container" id="app">
-        <div v-cloak>
-            <div v-for="category in categories">
-                <h2>{{category.title}}</h2>
-                <ul>
-                    <li v-for="post in category.posts">
-                        <a v-bind:href="'/' + category.permalink + '/' + post.permalink + '.html'">{{post.title}}</a>
-                        <small>{{post.date}}</small>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+	<nav id="header" class="navbar"></nav>
+    <div class="container">
+        <div id="categories"><p>Loading .....</p></div>
         <div>
             <h2>链接</h2>
             <ul>
@@ -32,7 +22,8 @@
             </ul>
         </div>
     </div>
-    <script data-main="/assets/js/home.js" src="/assets/js/require.min.js"></script>
+	<script src="/assets/js/jquery-1.12.4.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

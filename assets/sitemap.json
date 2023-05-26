@@ -19,6 +19,13 @@
     ],
     "posts": [
 	{
+	"title":"Bootstrap5 Vue3 Spa Template",
+	"permalink": "bootstrap5-vue3",
+	"date": "2023-05-26 10:29:00",
+	    "categories": "开发",
+	    "tags": []
+	},
+	{
             "title":"win10修改注册表打开共享打印机",
 	    "permalink": "windows-10-printer",
 	    "date": "2022-07-19 12:39:00",
