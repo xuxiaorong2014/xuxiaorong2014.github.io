@@ -19,6 +19,13 @@
     ],
     "posts": [
 	{
+	"title":"纯前端js生成PPT文档",
+	"permalink": "pptxjs",
+	"date": "2023-05-30 11:43:00",
+	    "categories": "开发",
+	    "tags": []
+	},
+	{
 	"title":"Bootstrap5 Vue3 Spa Template",
 	"permalink": "bootstrap5-vue3",
 	"date": "2023-05-26 10:29:00",

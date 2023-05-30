@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>纯前端js生成PPT文档</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+	<div class="container">
+	<h1>纯前端js生成PPT文档</h1>
+	<div>
+		<label>标题:</label>
+		<input type="text" value="测试标题" id="title">
+	</div>
+	<div>
+		<label>内容:</label>
+		<input type="text" value="测试内容" id="content">
+	</div>
+	<div>
+		<button id="submit">生成PPT</button>
+	</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/jszip@3.7.1/dist/jszip.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.8.0/dist/pptxgen.min.js"></script>
+	<script>
+		// 1. Create a new Presentation
+        let pres = new PptxGenJS();
+        pres.author = 'BH4GER';
+        pres.company = 'company';
+        pres.subject = 'gift';
+        pres.title = 'gift show';
+        pres.theme = { headFontFace: '黑体', bodyFontFace: '宋体' };
+		//pres.layout = "LAYOUT_WIDE";
+		// 定义模板页
+		pres.defineSlideMaster({
+            title: "MASTER_SLIDE",
+            //background: { color: "ffffff" },
+            objects: [
+                { rect: { x: 0.0, y: 0.5, w: '100%', h: 0.2, fill: { color: '0c479d' } } },
+                { rect: { x: 0.0, y: 0.62, w: '100%', h: 0.125, fill: { color: 'fe000c' } } },
+                //{ image: { x: 8.2, y: 0.1, w: 1.0, h: 0.372, path: "xxx.jpg" } },
+                {
+                    placeholder: {
+                        options: { name: "title", type: "title", x: 5.5, y: 1, h: 0.375, w: 4, color: "363636", fontSize: 16 },
+                        text: "(标题)",
+                    },
+                },
+                {
+                    placeholder: {
+                        options: { name: "body", type: "body", x: 5.5, y: 1, h: 0.25, w: 4, fontSize: 12 },
+                        text: "(内容)",
+                    },
+                }
+                
+            ]
+        });
+		document.getElementById('submit').addEventListener('click',function(){
+			var title = document.getElementById('title').value;
+			var content = document.getElementById('content').value;
+			// 2. Add a Slide
+            let slide = pres.addSlide({ masterName: "MASTER_SLIDE" });
+            // 3. Add one or more objects (Tables, Shapes, Images, Text and Media) to the Slide
+            //slide.addImage({ path: product.url, h: 5, w: 5, x: 0.1, y: 0.5, h: 5, w: 5 });
+            slide.addText(title,{ placeholder: 'title' });
+            slide.addText(content, { placeholder: 'body', color: 'c62954'  });
+            slide.addText('任意位置文本',{ x: 5.5, y: 2, w: 4, h: 4, fontSize: 12   });
+			// 4. Save the Presentation
+			pres.writeFile();
+		});
+	</script>
+	<script src="/assets/js/page.js"></script>
+</body>
+</html>
