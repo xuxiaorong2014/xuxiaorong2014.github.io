@@ -58,11 +58,18 @@ $(function(){
 			}
 		}
 	}
-	$.ajax('/assets/sitemap.json').done(function(res){
-		sitemap = res;
-		renderNav();
-		render();
+
+	$.ajax('/assets/sitemap.json',{
+		success:function(res){
+			sitemap = res;
+			renderNav();
+			render();
+		},
+		error:function(res,err){
+			console.log(err);
+		}
 	});
+
 	window.addEventListener('hashchange', function(){
 		currentPath = window.location.hash;
 		render();
