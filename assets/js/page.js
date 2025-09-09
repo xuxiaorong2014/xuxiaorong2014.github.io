@@ -18,5 +18,6 @@ var container = document.getElementsByClassName('container')[0];
 document.body.insertBefore(header,container);
 var footer=document.createElement('div');
 footer.style.textAlign = 'center';
-footer.innerHTML = '<p>谢谢</p>';
+footer.innerHTML = '<p>DE BH4GER 73 !</p>';
+
 document.body.insertAdjacentElement("beforeEnd", footer);
