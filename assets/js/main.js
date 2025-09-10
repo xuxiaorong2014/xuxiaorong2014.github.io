@@ -1,4 +1,3 @@
-
 $(function(){
 	var sitemap;
 	var currentPath = window.location.hash;
@@ -30,21 +29,21 @@ $(function(){
 		result.push('</div>');
 		return result.join('');
 	}
-	
+
 	var renderHome = function(){
 		var result = [];
 		for(var i in sitemap.categories){
 			result.push(renderCatalog(sitemap.categories[i]));
 		}
 		$('#categories').html(result.join(''));
- 
+
 	}
 	var render = function(){
 		var c = 'home';
 		if(currentPath.length > 1 && currentPath.substring(0,1) == '#'){
 			c = currentPath.substring(2);
 		}
-		
+
 		if(c == 'home'){
 			$('#links').show();
 			renderHome();
@@ -69,7 +68,7 @@ $(function(){
 		error:function(res,err){
 			console.log(err);
 		}
-	});
+        });
 
 	window.addEventListener('hashchange', function(){
 		currentPath = window.location.hash;

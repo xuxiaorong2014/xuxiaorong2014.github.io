@@ -18,6 +18,13 @@
         }
     ],
     "posts": [
+        {
+	"title":"windows 11 oobe 跳过网络账户",
+	"permalink": "windows11-bypassnro",
+	"date": "2025-09-10 15:27:00",
+	    "categories": "系统维护",
+	    "tags": []
+	},
 	{
 	"title":"纯前端js生成PPT文档",
 	"permalink": "pptxjs",
