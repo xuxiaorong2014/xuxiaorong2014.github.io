@@ -12,12 +12,12 @@ header.innerHTML='<div class="container" style="padding:0">\
     <li><a href="/#/programming">开发</a></li>\
     <li><a href="/#/uncategorized">未分类</a></li>\
     </ul>\
+    <hr style="clear:left" />\
   </div>';
 
 var container = document.getElementsByClassName('container')[0];
 document.body.insertBefore(header,container);
 var footer=document.createElement('div');
 footer.style.textAlign = 'center';
-footer.innerHTML = '<p>DE BH4GER 73 !</p>';
-
+footer.innerHTML = '<hr style="max-width:700px"><p>DE BH4GER 73 !</p>';
 document.body.insertAdjacentElement("beforeEnd", footer);

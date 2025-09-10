@@ -10,6 +10,7 @@ $(function(){
 			result.push('</li>');
 		}
 		result.push('</ul>');
+		result.push('<hr style="clear:left" />');
 		result.push('</div>');
 		$('#header').html(result.join(''));
 	}
