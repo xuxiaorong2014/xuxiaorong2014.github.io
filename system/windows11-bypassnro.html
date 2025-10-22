@@ -11,9 +11,22 @@
 <body>
   <div class="container">
     <h1>windows 11 oobe 跳过网络账户</h1>
-    <p>Shift+F10</p>
+    <p>
+        方法1: 修改注册表<br>
+        Shift + F10 <br>
+        reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE /v BypassNRO /t REG_DWORD /d 1 /f <br>
+        shutdown /r /t 0 
+    </p>
     <p>oobe\bypassnro</p>
     <p>start ms-cxh:localonly</p>
+    <p>
+        方法2: 命令行添加本地账户<br>
+        Shift + F10 <br>
+        net user "UserName" /add<br>
+        net localgroup "Administrators" "UserName" /add<br>
+        cd OOBE<br>
+        msoobe && shutdown -r
+    </p>
     <p></p>
     <p>激活: irm https://get.activated.win | iex </p>
   </div>
